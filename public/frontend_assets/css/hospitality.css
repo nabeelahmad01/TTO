@@ -1,0 +1,312 @@
+:root {
+    --hp-primary: #0066ff;
+    --hp-dark: #0052cc;
+    --hp-border: #e6efff;
+    --hp-soft: #f6faff;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+    background: #fff;
+}
+
+.hp-nav {
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 12px 0;
+}
+
+.hp-nav .navbar-brand,
+.hp-nav .nav-link {
+    color: var(--hp-primary) !important;
+    font-weight: 700;
+}
+
+/* Hero */
+.hp-hero {
+    background: #f3f8ff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 56px 0 36px;
+}
+
+.hp-breadcrumb {
+    color: #1e63e6;
+    font-size: 13px;
+    text-align: center;
+}
+
+.hp-hero-title {
+    color: var(--hp-primary);
+    font-weight: 800;
+    font-size: 42px;
+    text-align: center;
+    margin: 6px 0 8px;
+}
+
+.hp-hero-sub {
+    color: #5b87d1;
+    text-align: center;
+}
+
+/* Intro */
+.hp-intro {
+    padding: 56px 0;
+}
+
+.hp-intro .hp-kicker {
+    color: #5b87d1;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.hp-intro h2 {
+    color: var(--hp-primary);
+    font-weight: 800;
+}
+
+.hp-intro p {
+    color: #5b87d1;
+}
+
+.hp-btn {
+    background: var(--hp-primary);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 14px;
+    font-weight: 700;
+}
+
+.hp-btn:hover {
+    background: var(--hp-dark);
+    color: #fff;
+}
+
+/* Benefits */
+.hp-benefits {
+    background: repeating-linear-gradient(
+        45deg,
+        #eff5ff 0,
+        #eff5ff 12px,
+        #e4eeff 12px,
+        #e4eeff 24px
+    );
+    border: 1px solid var(--hp-border);
+    border-radius: 8px;
+    padding: 30px 22px;
+}
+
+.hp-benefits h3 {
+    color: var(--hp-primary);
+    font-weight: 800;
+}
+
+.hp-feature {
+    display: flex;
+    gap: 12px;
+}
+
+.hp-feature i {
+    color: #2e6fee;
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+.hp-feature h6 {
+    color: var(--hp-primary);
+    font-weight: 800;
+    margin: 0;
+}
+
+.hp-feature p {
+    color: #5b87d1;
+    font-size: 13px;
+    margin: 0;
+}
+
+/* Brands */
+.hp-brands {
+    padding: 46px 0;
+}
+
+.hp-brands h3 {
+    color: var(--hp-primary);
+    font-weight: 800;
+}
+
+.hp-brands p {
+    color: #5b87d1;
+}
+
+.hp-brand-card {
+    height: 110px;
+    background: #f1f6ff;
+    border: 1px solid var(--hp-border);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2e6fee;
+    font-weight: 800;
+}
+
+.hp-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.hp-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #c7dcff;
+}
+
+.hp-dot.active {
+    background: var(--hp-primary);
+}
+
+/* Examples slider */
+.hp-examples {
+    padding: 40px 0;
+}
+
+.hp-examples h3 {
+    color: var(--hp-primary);
+    font-weight: 800;
+    text-align: center;
+}
+
+.hp-examples p {
+    color: #5b87d1;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.hp-ex-viewport {
+    position: relative;
+}
+
+.hp-ex-track {
+    display: flex;
+    gap: 18px;
+    overflow: hidden;
+}
+
+.hp-ex-card {
+    min-width: 70%;
+    height: 320px;
+    background: repeating-linear-gradient(
+        45deg,
+        #eff5ff 0,
+        #eff5ff 12px,
+        #e4eeff 12px,
+        #e4eeff 24px
+    );
+    border: 1px solid var(--hp-border);
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.hp-ex-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: none;
+    background: var(--hp-primary);
+    color: #fff;
+}
+
+.hp-ex-btn.prev {
+    left: -12px;
+}
+
+.hp-ex-btn.next {
+    right: -12px;
+}
+
+/* Related products */
+.hp-related {
+    padding: 16px 0 56px;
+}
+
+.hp-related h3 {
+    color: var(--hp-primary);
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.hp-prod {
+    background: #fff;
+    border: 1px solid var(--hp-border);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.hp-prod-top {
+    height: 160px;
+    background: linear-gradient(180deg, #f3f9ff, #eef5ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hp-prod-img {
+    font-size: 64px;
+    color: #a7c5ff;
+}
+
+.hp-prod-body {
+    padding: 14px 16px;
+}
+
+.hp-prod-name {
+    color: var(--hp-primary);
+    font-weight: 800;
+    margin: 0 0 6px;
+}
+
+.hp-prod-price {
+    color: var(--hp-primary);
+    font-weight: 700;
+}
+
+/* CTA banner */
+.hp-cta {
+    background: #f6faff;
+    border-top: 1px solid var(--hp-border);
+    padding: 40px 0;
+}
+
+.hp-cta h3 {
+    color: var(--hp-primary);
+    font-weight: 800;
+    text-align: center;
+}
+
+.hp-cta p {
+    text-align: center;
+    color: #5b87d1;
+}
+
+.hp-cta .hp-btn {
+    display: block;
+    margin: 10px auto 0;
+}
+
+@media (max-width: 768px) {
+    .hp-hero-title {
+        font-size: 32px;
+    }
+
+    .hp-ex-card {
+        min-width: 90%;
+    }
+}

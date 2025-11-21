@@ -1,0 +1,162 @@
+
+    :root {
+      --iw-primary: #0066ff;
+      --iw-primary-dark: #0052cc;
+      --iw-border: #e6efff;
+      --iw-light: #f3f8ff;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: #fff;
+    }
+
+    .iw-nav {
+      background: #fff;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 12px 0;
+    }
+
+    .iw-nav .navbar-brand,
+    .iw-nav .nav-link {
+      color: var(--iw-primary) !important;
+      font-weight: 700;
+    }
+
+    .iw-hero {
+      background: var(--iw-light);
+      border-bottom: 1px solid #e0e0e0;
+      padding: 56px 0 28px;
+    }
+
+    .iw-breadcrumb {
+      color: #7aa7ff;
+      font-size: 14px;
+    }
+
+    .iw-title {
+      color: var(--iw-primary);
+      font-size: 40px;
+      font-weight: 800;
+      margin-top: 10px;
+    }
+
+    .iw-process-wrap {
+      padding: 56px 0;
+    }
+
+    .iw-process-heading {
+      text-align: center;
+      color: var(--iw-primary);
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 26px;
+    }
+
+    .iw-step {
+      background: #f6faff;
+      border: 1px solid var(--iw-border);
+      border-radius: 6px;
+      padding: 18px 18px;
+      margin-bottom: 14px;
+      transition: background 200ms;
+    }
+
+    .iw-step:hover {
+      background: #eef5ff;
+    }
+
+    .iw-step-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      cursor: pointer;
+    }
+
+    .iw-step-title {
+      color: var(--iw-primary);
+      font-weight: 800;
+    }
+
+    .iw-step-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--iw-primary);
+      border: 2px solid var(--iw-primary);
+      font-weight: 800;
+    }
+
+    .iw-step-body {
+      display: none;
+      padding-top: 14px;
+      color: #5f8bd2;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .iw-step.open .iw-step-body {
+      display: block;
+    }
+
+    .iw-step.open .iw-step-icon {
+      background: var(--iw-primary);
+      color: #fff;
+    }
+
+    .iw-first-row {
+      background: #f1f6ff;
+    }
+
+    .iw-first-desc {
+      color: #5f8bd2;
+      font-size: 14px;
+    }
+
+    .iw-cta {
+      margin: 46px 0 80px;
+      background: #eaf3ff;
+      border: 1px solid var(--iw-border);
+      border-radius: 8px;
+      padding: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .iw-cta-title {
+      color: var(--iw-primary);
+      font-weight: 800;
+      font-size: 22px;
+      margin: 0;
+    }
+
+    .iw-cta-btn {
+      background: var(--iw-primary);
+      color: #fff;
+      border: none;
+      font-weight: 700;
+      padding: 10px 16px;
+      border-radius: 6px;
+    }
+
+    .iw-cta-btn:hover {
+      background: var(--iw-primary-dark);
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .iw-title {
+        font-size: 32px;
+      }
+
+      .iw-cta {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }

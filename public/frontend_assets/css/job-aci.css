@@ -1,0 +1,128 @@
+:root {
+    --jd-primary: #0066ff;
+    --jd-border: #e6efff;
+    --jd-soft: #f3f8ff;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+    background: #fff;
+}
+
+/* Hero */
+.jd-hero {
+    background: #f3f8ff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 36px 0 20px;
+}
+.jd-breadcrumb {
+    color: #1e63e6;
+    font-size: 13px;
+}
+.jd-title {
+    color: var(--jd-primary);
+    font-weight: 800;
+    font-size: 42px;
+    margin-top: 8px;
+}
+
+/* Content */
+.jd-section h4 {
+    color: var(--jd-primary);
+    font-weight: 800;
+    margin: 18px 0 10px;
+}
+.jd-par {
+    color: #5b87d1;
+}
+.jd-apply {
+    background: #f6faff;
+    border: 1px solid var(--jd-border);
+    border-radius: 8px;
+    padding: 18px;
+}
+.jd-apply h6 {
+    color: #1e63e6;
+    font-weight: 800;
+}
+.jd-apply .btn {
+    background: #1e63e6;
+    color: #fff;
+    border: none;
+}
+
+.jd-list {
+    color: #5b87d1;
+}
+.jd-list li {
+    margin-bottom: 10px;
+}
+
+/* Relevant slider */
+.jd-rel {
+    border-top: 1px solid #e9f0ff;
+    padding: 24px 0 46px;
+    margin-top: 24px;
+}
+.jd-rel h4 {
+    color: var(--jd-primary);
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+.jd-nav {
+    display: flex;
+    gap: 10px;
+}
+.jd-btn {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid #cfe0ff;
+    background: #fff;
+    color: #1e63e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.jd-viewport {
+    position: relative;
+    overflow: hidden;
+}
+.jd-track {
+    display: flex;
+    gap: 18px;
+    transition: transform 400ms ease;
+}
+.jd-card {
+    min-width: 300px;
+    background: #fff;
+    border: 1px solid var(--jd-border);
+    border-radius: 8px;
+    padding: 16px;
+}
+.jd-card h6 {
+    color: #1e63e6;
+    font-weight: 800;
+}
+.jd-date {
+    color: #8eb1ff;
+    font-size: 12px;
+}
+.jd-desc {
+    color: #5b87d1;
+    font-size: 14px;
+}
+.jd-link {
+    color: #1e63e6;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media (max-width: 576px) {
+    .jd-title {
+        font-size: 32px;
+    }
+    .jd-card {
+        min-width: 260px;
+    }
+}

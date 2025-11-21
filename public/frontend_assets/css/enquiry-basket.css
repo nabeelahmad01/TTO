@@ -1,0 +1,121 @@
+:root {
+    --eb-primary: #0066ff;
+    --eb-dark: #0052cc;
+    --eb-border: #e6efff;
+    --eb-soft: #f6faff;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+    background: #fff;
+}
+
+.eb-title {
+    color: var(--eb-primary);
+    font-weight: 800;
+    font-size: 36px;
+    margin: 28px 0 16px;
+}
+.eb-head {
+    color: #6c97e8;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.eb-item {
+    padding: 16px 0;
+    border-bottom: 1px solid #eef3ff;
+}
+.eb-thumb {
+    width: 64px;
+    height: 64px;
+    border-radius: 6px;
+    background: linear-gradient(180deg, #f3f9ff, #eef5ff);
+    border: 1px solid var(--eb-border);
+}
+.eb-name {
+    color: var(--eb-primary);
+    font-weight: 800;
+    margin: 0;
+}
+.eb-variant {
+    color: #8ab0ff;
+    font-size: 12px;
+}
+.eb-icon {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cfe0ff;
+    border-radius: 50%;
+    color: #1e63e6;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin-right: 6px;
+}
+
+.eb-qty {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #cfe0ff;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.eb-qty button {
+    width: 34px;
+    height: 34px;
+    border: 0;
+    background: #eef5ff;
+    color: #1e63e6;
+    font-weight: 800;
+}
+.eb-qty input {
+    width: 46px;
+    height: 34px;
+    border: 0;
+    text-align: center;
+    font-weight: 700;
+    color: #1e63e6;
+}
+
+.eb-summary {
+    background: #f3f8ff;
+    border: 1px solid var(--eb-border);
+    border-radius: 8px;
+    padding: 18px;
+}
+.eb-summary h6 {
+    color: #1e63e6;
+    font-weight: 800;
+}
+.eb-total {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+.eb-total-amount {
+    color: var(--eb-primary);
+    font-size: 28px;
+    font-weight: 800;
+}
+.eb-cta {
+    width: 100%;
+    background: var(--eb-primary);
+    color: #fff;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-weight: 700;
+}
+.eb-cta:hover {
+    background: var(--eb-dark);
+    color: #fff;
+}
+
+@media (max-width: 576px) {
+    .eb-title {
+        font-size: 28px;
+    }
+}

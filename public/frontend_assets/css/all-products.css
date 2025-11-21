@@ -1,0 +1,204 @@
+
+    :root {
+      --ap-primary: #0066ff;
+      --ap-dark: #0052cc;
+      --ap-border: #e6efff;
+      --ap-soft: #f6faff;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: #fff
+    }
+
+    .ap-nav {
+      background: #fff;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 12px 0
+    }
+
+    .ap-nav .navbar-brand,
+    .ap-nav .nav-link {
+      color: var(--ap-primary) !important;
+      font-weight: 700
+    }
+
+    .ap-hero {
+      padding: 44px 0 16px;
+      background: #fff
+    }
+
+    .ap-breadcrumb {
+      color: #1e63e6;
+      font-size: 13px;
+      text-align: center
+    }
+
+    .ap-title {
+      color: var(--ap-primary);
+      font-weight: 800;
+      font-size: 34px;
+      text-align: center;
+      margin: 6px 0 16px
+    }
+
+    /* Toolbar */
+    .ap-toolbar {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin: 0 0 12px
+    }
+
+    .ap-search {
+      flex: 1;
+      display: flex;
+      border: 1px solid #cfe0ff;
+      border-radius: 6px;
+      overflow: hidden
+    }
+
+    .ap-search input {
+      border: 0;
+      outline: 0;
+      padding: 10px 12px;
+      flex: 1
+    }
+
+    .ap-search button {
+      width: 42px;
+      border: 0;
+      background: var(--ap-primary);
+      color: #fff
+    }
+
+    .ap-toggle {
+      margin-left: auto;
+      background: #eef5ff;
+      border: 1px solid #cfe0ff;
+      border-radius: 6px;
+      padding: 8px 12px;
+      color: #1e63e6;
+      font-weight: 800
+    }
+
+    /* Layout */
+    .ap-wrapper {
+      display: grid;
+      grid-template-columns: 0px 1fr;
+      gap: 24px;
+      transition: grid-template-columns 250ms ease
+    }
+
+    .ap-wrapper.open {
+      grid-template-columns: 300px 1fr
+    }
+
+    /* Filters */
+    .ap-filters {
+      position: relative;
+      border-right: 1px solid #eef3ff
+    }
+
+    .ap-sticky {
+      position: sticky;
+      top: 16px;
+      max-height: calc(100vh - 32px);
+      overflow: auto;
+      padding-right: 8px
+    }
+
+    .ap-filter-title {
+      color: #1e63e6;
+      font-weight: 800;
+      display: flex;
+      justify-content: space-between;
+      align-items: center
+    }
+
+    .ap-filter-group {
+      margin: 14px 0
+    }
+
+    .ap-chip-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px
+    }
+
+    .ap-chip {
+      border: 1px solid #d5e5ff;
+      padding: 6px 10px;
+      border-radius: 6px;
+      background: #f5f9ff;
+      color: #1e63e6;
+      font-weight: 700;
+      font-size: 12px;
+      cursor: pointer
+    }
+
+    .ap-range {
+      accent-color: var(--ap-primary)
+    }
+
+    /* Products */
+    .ap-results {
+      color: #5b87d1;
+      font-size: 13px;
+      margin-bottom: 8px
+    }
+
+    .ap-card {
+      background: #fff;
+      border: 1px solid var(--ap-border);
+      border-radius: 8px;
+      overflow: hidden
+    }
+
+    .ap-card-top {
+      height: 180px;
+      background: linear-gradient(180deg, #f3f9ff, #eef5ff);
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+
+    .ap-card-top i {
+      font-size: 70px;
+      color: #a7c5ff
+    }
+
+    .ap-card-body {
+      padding: 14px 16px
+    }
+
+    .ap-card-name {
+      color: var(--ap-primary);
+      font-weight: 800;
+      margin: 0 0 6px
+    }
+
+    .ap-card-price {
+      color: var(--ap-primary);
+      font-weight: 700
+    }
+
+    @media(max-width: 992px) {
+      .ap-wrapper.open {
+        grid-template-columns: 260px 1fr
+      }
+    }
+
+    @media(max-width: 576px) {
+      .ap-title {
+        font-size: 28px
+      }
+
+      .ap-toolbar {
+        flex-wrap: wrap
+      }
+
+      .ap-toggle {
+        width: 100%
+      }
+    }

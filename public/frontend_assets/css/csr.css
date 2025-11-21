@@ -1,0 +1,95 @@
+:root {
+    --csr-primary: #0066ff;
+    --csr-dark: #0052cc;
+    --csr-border: #e6efff;
+    --csr-soft: #f3f8ff;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+    background: #ffffff;
+}
+
+/* Hero split */
+.csr-hero {
+    padding: 0;
+}
+.csr-left {
+    min-height: 360px;
+    background: #eef5ff;
+    border-right: 1px solid var(--csr-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.csr-left .csr-ph {
+    width: 120px;
+    height: 90px;
+    border: 2px dashed #bcd3ff;
+    border-radius: 6px;
+}
+.csr-right {
+    padding: 40px 24px;
+}
+.csr-breadcrumb {
+    color: #1e63e6;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+.csr-title {
+    color: var(--csr-primary);
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 1.15;
+}
+.csr-lead {
+    color: #5b87d1;
+    margin-top: 14px;
+}
+
+/* Introduction */
+.csr-intro {
+    padding: 40px 0;
+}
+.csr-intro h3 {
+    color: var(--csr-primary);
+    font-weight: 800;
+    margin-bottom: 14px;
+}
+.csr-intro p {
+    color: #5b87d1;
+}
+
+/* Accomplishments */
+.csr-acc {
+    padding: 28px 0 70px;
+}
+.csr-acc h3 {
+    color: var(--csr-primary);
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+.csr-row {
+    padding: 16px 0;
+    border-bottom: 1px solid #e9f0ff;
+}
+.csr-num {
+    color: #7aa7ff;
+    font-weight: 800;
+}
+.csr-name {
+    color: var(--csr-primary);
+    font-weight: 800;
+}
+.csr-desc {
+    color: #5b87d1;
+}
+
+@media (max-width: 992px) {
+    .csr-title {
+        font-size: 32px;
+    }
+    .csr-left {
+        min-height: 220px;
+    }
+}
