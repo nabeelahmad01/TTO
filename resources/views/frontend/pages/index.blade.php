@@ -21,11 +21,10 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="hero-image">
-                        <img src="./banner_img.png" alt="Hero Image" />
+                        <img src="{{asset('frontend_assets/images/banner_img.png')}}" alt="Hero Image" />
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
