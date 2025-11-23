@@ -1,0 +1,117 @@
+
+    :root {
+      --primary-color: #0066ff;
+      --primary-dark: #0052cc;
+      --light-bg: #eaf3ff;
+      --chip-bg: #f3f7ff;
+      --border-color: #e0e0e0;
+    }
+
+    body {
+      background: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    /* Navbar */
+    .navbar-custom {
+      background: #fff;
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 0;
+    }
+
+    .navbar-custom .navbar-brand {
+      color: var(--primary-color) !important;
+      font-weight: 700;
+    }
+
+    .navbar-custom .nav-link {
+      color: var(--primary-color) !important;
+      font-weight: 500;
+    }
+
+    /* Hero / Breadcrumb */
+    .hero-bar {
+      background: #f3f8ff;
+      padding: 48px 0 24px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .breadcrumb-mini {
+      color: #7aa7ff;
+      font-size: 14px;
+    }
+
+    .page-title {
+      color: var(--primary-color);
+      font-weight: 800;
+      font-size: 42px;
+      margin-top: 12px;
+    }
+
+    /* Filters */
+    .filters-wrap {
+      gap: 16px;
+      padding: 16px 0 8px;
+    }
+
+    .filter-btn {
+      background: #f5f9ff;
+      color: var(--primary-color);
+      border: 1px solid #e6efff;
+      border-radius: 6px;
+      padding: 10px 14px;
+      font-weight: 600;
+    }
+
+    .filter-btn:focus,
+    .filter-btn:hover {
+      background: #eef5ff;
+      color: var(--primary-dark);
+    }
+
+    .dropdown-menu {
+      border-color: #e6efff;
+    }
+
+    /* Service Cards */
+    .service-card {
+      background: #f1f7ff;
+      border: 1px solid #e6efff;
+      border-radius: 8px;
+      padding: 28px 24px;
+      margin: 18px 0;
+    }
+
+    .service-title {
+      color: var(--primary-color);
+      font-size: 22px;
+      font-weight: 800;
+    }
+
+    .service-desc {
+      color: #6489c9;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .service-link {
+      color: var(--primary-color);
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .service-link:hover {
+      color: var(--primary-dark);
+    }
+
+    /* Footer spacer */
+    .page-spacer {
+      height: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .page-title {
+        font-size: 32px;
+      }
+    }

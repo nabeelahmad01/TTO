@@ -1,0 +1,96 @@
+:root {
+    --sp-primary: #0066ff;
+    --sp-dark: #0052cc;
+    --sp-border: #e6efff;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+    background: #fff;
+}
+
+.sp-nav {
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 12px 0;
+}
+.sp-nav .navbar-brand,
+.sp-nav .nav-link {
+    color: var(--sp-primary) !important;
+    font-weight: 700;
+}
+
+.sp-hero {
+    padding: 40px 0 10px;
+}
+.sp-breadcrumb {
+    color: #1e63e6;
+    font-size: 13px;
+}
+.sp-title {
+    color: var(--sp-primary);
+    font-weight: 800;
+    font-size: 34px;
+    margin: 10px 0 16px;
+    max-width: 460px;
+}
+
+.sp-card {
+    background: repeating-linear-gradient(
+        45deg,
+        #eff5ff 0,
+        #eff5ff 12px,
+        #e4eeff 12px,
+        #e4eeff 24px
+    );
+    border: 1px solid var(--sp-border);
+    border-radius: 8px;
+    padding: 28px;
+    position: relative;
+}
+.sp-card h4 {
+    color: var(--sp-primary);
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+.sp-card p {
+    color: #5b87d1;
+    max-width: 360px;
+    margin-bottom: 18px;
+}
+.sp-link {
+    color: var(--sp-primary);
+    font-weight: 700;
+    text-decoration: none;
+}
+.sp-arrow {
+    position: absolute;
+    right: -18px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--sp-primary);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    box-shadow: 0 8px 20px rgba(0, 102, 255, 0.25);
+}
+
+.sp-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin: 10px 0 50px;
+}
+@media (max-width: 576px) {
+    .sp-title {
+        font-size: 28px;
+    }
+    .sp-arrow {
+        display: none;
+    }
+}

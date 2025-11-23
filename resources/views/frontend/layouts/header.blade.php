@@ -1,4 +1,4 @@
- 
+
     <div class="main_header">
         <div class="upper_header">
             <div class="container px-3 px-md-4">
@@ -11,7 +11,7 @@
         </div>
         <nav class="navbar navbar-expand-lg navbar-custom">
             <div class="container px-3 px-md-4">
-                <a class="navbar-brand" href="#"><img class="logo_img" src="./logo.png" alt="Logo"></a>
+                <a class="navbar-brand" href="#"><img class="logo_img" src="{{asset('frontend_assets/images/logo.png')}}" alt="Logo"></a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

@@ -1,0 +1,195 @@
+
+    :root {
+      --primary-color: #0066ff;
+      --primary-dark: #0052cc;
+      --light-bg: #f3f8ff;
+      --border-color: #e0e0e0;
+    }
+
+    body {
+      background: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    /* Navbar */
+    .navbar-custom {
+      background: #fff;
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 0;
+    }
+
+    .navbar-custom .navbar-brand {
+      color: var(--primary-color) !important;
+      font-weight: 700;
+    }
+
+    .navbar-custom .nav-link {
+      color: var(--primary-color) !important;
+      font-weight: 500;
+    }
+
+    /* Hero */
+    .hero {
+      background: var(--light-bg);
+      padding: 56px 0 32px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .breadcrumb-mini {
+      color: #7aa7ff;
+      font-size: 14px;
+    }
+
+    .page-title {
+      color: var(--primary-color);
+      font-weight: 800;
+      font-size: 42px;
+      margin-top: 12px;
+    }
+
+    /* Overview */
+    .overview {
+      padding: 64px 0;
+    }
+
+    .section-title {
+      color: var(--primary-color);
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    .muted {
+      color: #6489c9;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    /* Included / Accordion */
+    .included {
+      padding: 24px 0 80px;
+    }
+
+    .accordion-item {
+      border: none;
+      border-bottom: 1px solid #e6efff;
+      border-radius: 0 !important;
+    }
+
+    .accordion-button {
+      padding-left: 0;
+      padding-right: 0;
+      font-weight: 700;
+      color: var(--primary-color);
+      background: transparent;
+      box-shadow: none !important;
+    }
+
+    .accordion-button:not(.collapsed) {
+      color: var(--primary-dark);
+      background: transparent;
+    }
+
+    .accordion-body {
+      padding-left: 0;
+      padding-right: 0;
+      color: #5a84cc;
+    }
+
+    /* Right visual placeholder */
+    .visual-box {
+      background: repeating-linear-gradient(45deg, #eff5ff 0, #eff5ff 12px, #e4eeff 12px, #e4eeff 24px);
+      border: 1px solid #e6efff;
+      border-radius: 8px;
+      min-height: 320px;
+    }
+
+    @media (max-width: 768px) {
+      .page-title {
+        font-size: 32px;
+      }
+
+      .section-title {
+        font-size: 24px;
+      }
+    }
+
+    /* Gallery Slider */
+    .gallery-section {
+      padding: 70px 0 40px;
+      background: #ffffff;
+    }
+
+    .gallery-title {
+      text-align: center;
+      color: var(--primary-color);
+      font-weight: 800;
+      font-size: 22px;
+      margin-bottom: 26px;
+    }
+
+    .gallery-viewport {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .gallery-track {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      transition: transform 400ms ease;
+      padding: 10px 10px 30px;
+    }
+
+    .gallery-item {
+      flex: 0 0 auto;
+      width: 220px;
+      height: 280px;
+      border-radius: 10px;
+      background: repeating-linear-gradient(45deg, #eff5ff 0, #eff5ff 10px, #e4eeff 10px, #e4eeff 20px);
+      border: 1px solid #e6efff;
+      transform-origin: center bottom;
+      transform: scale(0.78);
+      opacity: 0.6;
+      transition: transform 300ms ease, opacity 300ms ease, box-shadow 300ms ease;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: inherit;
+      display: block;
+    }
+
+    .gallery-item.active {
+      transform: scale(1.08);
+      opacity: 1;
+      box-shadow: 0 12px 30px rgba(0, 102, 255, 0.15);
+    }
+
+    .gallery-nav {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    .gallery-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 2px solid var(--primary-color);
+      color: var(--primary-color);
+      background: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 200ms;
+    }
+
+    .gallery-btn:hover {
+      background: var(--primary-color);
+      color: #fff;
+    }

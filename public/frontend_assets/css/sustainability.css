@@ -1,0 +1,95 @@
+:root {
+    --su-primary: #0066ff;
+    --su-dark: #0052cc;
+    --su-border: #e6efff;
+    --su-soft: #f3f8ff;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+    background: #ffffff;
+}
+
+/* Hero split (image + text) */
+.su-hero {
+    padding: 0;
+}
+.su-left {
+    min-height: 260px;
+    background: #eef5ff;
+    border-right: 1px solid var(--su-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.su-left .su-ph {
+    width: 140px;
+    height: 100px;
+    border: 2px dashed #bcd3ff;
+    border-radius: 6px;
+}
+.su-right {
+    padding: 30px 24px;
+}
+.su-breadcrumb {
+    color: #1e63e6;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+.su-title {
+    color: var(--su-primary);
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 1.15;
+}
+.su-lead {
+    color: #5b87d1;
+    margin-top: 10px;
+}
+
+/* Introduction */
+.su-intro {
+    padding: 40px 0;
+}
+.su-intro h3 {
+    color: var(--su-primary);
+    font-weight: 800;
+    margin-bottom: 14px;
+}
+.su-intro p {
+    color: #5b87d1;
+}
+
+/* Accomplishments */
+.su-acc {
+    padding: 10px 0 70px;
+}
+.su-acc h3 {
+    color: var(--su-primary);
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+.su-row {
+    padding: 16px 0;
+    border-bottom: 1px solid #e9f0ff;
+}
+.su-num {
+    color: #7aa7ff;
+    font-weight: 800;
+}
+.su-name {
+    color: var(--su-primary);
+    font-weight: 800;
+}
+.su-desc {
+    color: #5b87d1;
+}
+
+@media (max-width: 992px) {
+    .su-title {
+        font-size: 30px;
+    }
+    .su-left {
+        min-height: 200px;
+    }
+}
