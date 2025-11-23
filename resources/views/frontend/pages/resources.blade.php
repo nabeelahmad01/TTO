@@ -1,7 +1,7 @@
 @extends('frontend.layouts.master')
 @section('title', 'Home - Welcome')
 @section('content')
-    <link rel="stylesheet" href="{{ asset('frontend_assets/css/reminder-email-template.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend_assets/css/resources.css') }}">
 
      <!-- Hero -->
     <section class="rc-hero">

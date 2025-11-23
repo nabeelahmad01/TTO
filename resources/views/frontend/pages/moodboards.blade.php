@@ -1,7 +1,7 @@
 @extends('frontend.layouts.master')
 @section('title', 'Home - Welcome')
 @section('content')
-    <link rel="stylesheet" href="{{ asset('frontend_assets/css/about.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend_assets/css/moodboards.css') }}">
     <nav class="navbar navbar-expand-lg mb-nav">
         <div class="container-fluid px-3 px-md-4">
             <a class="navbar-brand" href="index.html">totaloffice</a>
