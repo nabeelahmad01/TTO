@@ -1,0 +1,260 @@
+
+    :root {
+      --mbd-primary: #0066ff;
+      --mbd-dark: #0052cc;
+      --mbd-border: #e0e0e0;
+      --mbd-soft: #f3f8ff;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: #fff
+    }
+
+    /* Navbar */
+    .mbd-nav {
+      background: #fff;
+      border-bottom: 1px solid var(--mbd-border);
+      padding: 12px 0
+    }
+
+    .mbd-nav .navbar-brand,
+    .mbd-nav .nav-link {
+      color: var(--mbd-primary) !important;
+      font-weight: 700
+    }
+
+    /* Hero */
+    .mbd-hero {
+      background: var(--mbd-soft);
+      border-bottom: 1px solid var(--mbd-border);
+      padding: 34px 0 24px
+    }
+
+    .mbd-breadcrumb {
+      color: #1e63e6;
+      font-size: 13px
+    }
+
+    .mbd-hero-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px
+    }
+
+    .mbd-share a {
+      color: #1e63e6;
+      margin-left: 10px
+    }
+
+    .mbd-hero-illus {
+      font-size: 90px;
+      color: #8bb3ff
+    }
+
+    .mbd-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 16px
+    }
+
+    .mbd-title {
+      color: var(--mbd-primary);
+      font-weight: 800;
+      font-size: 44px;
+      margin: 0
+    }
+
+    .mbd-fav-btn {
+      border: 2px solid #a9c6ff;
+      background: #fff;
+      color: var(--mbd-primary);
+      font-weight: 700;
+      border-radius: 6px;
+      padding: 10px 16px
+    }
+
+    .mbd-fav-btn i {
+      margin-right: 8px
+    }
+
+    /* Content A */
+    .mbd-section {
+      padding: 60px 0
+    }
+
+    .mbd-box {
+      background: linear-gradient(180deg, #f0f6ff, #e9f2ff);
+      border: 1px solid #e6efff;
+      border-radius: 8px
+    }
+
+    .mbd-box.mbd-square {
+      height: 380px
+    }
+
+    .mbd-illus {
+      font-size: 110px;
+      color: #8bb3ff
+    }
+
+    .mbd-square-wrap {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+
+    .mbd-text h3 {
+      color: var(--mbd-primary);
+      font-weight: 800
+    }
+
+    .mbd-text p {
+      color: #5d86d1
+    }
+
+    /* Content B */
+    .mbd-circle {
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto
+    }
+
+    /* Products Slider */
+    .mbd-products {
+      padding: 10px 0 60px
+    }
+
+    .mbd-products h3 {
+      color: var(--mbd-primary);
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 18px
+    }
+
+    .mbd-slider-viewport {
+      overflow: hidden;
+      position: relative
+    }
+
+    .mbd-slider-track {
+      display: flex;
+      gap: 18px;
+      transition: transform 400ms ease
+    }
+
+    .mbd-prod-card {
+      min-width: 260px;
+      background: #fff;
+      border: 1px solid #e6efff;
+      border-radius: 8px;
+      overflow: hidden
+    }
+
+    .mbd-prod-top {
+      height: 150px;
+      background: linear-gradient(180deg, #f3f9ff, #eef5ff);
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+
+    .mbd-prod-body {
+      padding: 14px 16px
+    }
+
+    .mbd-prod-name {
+      color: var(--mbd-primary);
+      font-weight: 800;
+      font-size: 16px;
+      margin: 0 0 6px
+    }
+
+    .mbd-prod-price {
+      color: var(--mbd-primary);
+      font-weight: 700;
+      font-size: 14px
+    }
+
+    .mbd-slider-nav {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 10px
+    }
+
+    .mbd-btn {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 2px solid var(--mbd-primary);
+      background: #fff;
+      color: var(--mbd-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+
+    .mbd-btn:hover {
+      background: var(--mbd-primary);
+      color: #fff
+    }
+
+    /* Next Moodboard */
+    .mbd-next {
+      background: #f6faff;
+      border-top: 1px solid #e6efff;
+      padding: 40px 0
+    }
+
+    .mbd-next-title {
+      color: #1e63e6;
+      font-size: 13px;
+      font-weight: 800;
+      margin: 0
+    }
+
+    .mbd-next-name {
+      color: var(--mbd-primary);
+      font-weight: 800;
+      font-size: 36px;
+      margin: 6px 0 14px
+    }
+
+    .mbd-next .mbd-go {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--mbd-primary);
+      color: #fff;
+      border: none
+    }
+
+    @media(max-width:992px) {
+      .mbd-circle {
+        width: 320px;
+        height: 320px
+      }
+
+      .mbd-title {
+        font-size: 36px
+      }
+    }
+
+    @media(max-width:576px) {
+      .mbd-title {
+        font-size: 30px
+      }
+
+      .mbd-fav-btn {
+        padding: 8px 12px
+      }
+    }
