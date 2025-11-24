@@ -53,6 +53,13 @@
                         <li><a href="#" key="t-full-calendar">Full Calendar</a></li>
                     </ul>
                 </li>
+
+                <li>
+                    <a href="{{ route('bookings.index') }}" class="waves-effect">
+                        <i class="bx bx-calendar-check"></i>
+                        <span key="t-bookings">Bookings</span>
+                    </a>
+                </li>
             </ul>
         </div>
         <!-- Sidebar -->

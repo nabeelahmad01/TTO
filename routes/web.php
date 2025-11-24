@@ -12,6 +12,18 @@ use App\Http\Controllers\Backend\DashboardController;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::post('/booking', [App\Http\Controllers\Frontend\BookingController::class, 'store'])->name('booking.store');
+
+// Static Pages
+Route::controller(App\Http\Controllers\Frontend\PageController::class)->group(function () {
+    Route::get('/about', 'about')->name('about');
+    Route::get('/services', 'services')->name('services');
+    Route::get('/products', 'products')->name('products');
+    Route::get('/contact', 'contact')->name('contact');
+    Route::get('/initiatives', 'initiatives')->name('initiatives');
+    // Catch-all for other static pages
+    Route::get('/page/{page}', 'show')->name('page.show');
+});
 
 /*
 |--------------------------------------------------------------------------
@@ -28,5 +40,6 @@ Route::prefix('admin')->group(function () {
 // Admin Protected Routes
 Route::prefix('admin')->middleware('admin.auth')->group(function () {
     Route::get('dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
+    Route::resource('bookings', App\Http\Controllers\Backend\BookingController::class)->only(['index', 'show']);
     Route::post('logout', [AdminLoginController::class, 'logout'])->name('admin.logout');
 });

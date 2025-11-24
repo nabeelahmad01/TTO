@@ -255,11 +255,8 @@
                 <!-- Card 1: Furniture -->
                 <div class="category-card" data-index="0">
                     <div class="card-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M20 9V6c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v3c-1.1 0-2 .9-2 2v5h1.33L4 19h1l.67-3h12.67l.66 3h1l.67-3H22v-5c0-1.1-.9-2-2-2zm-2 0H6V6h12v3z"
-                                stroke-width="1.5" />
-                        </svg>
+                                                <img src="{{asset('frontend_assets/images/banner_img.png')}}" alt="Hero Image" width="100px" />
+
                     </div>
                     <h3 class="card-title">Furniture</h3>
                     <p class="card-items">40+ items</p>
@@ -268,11 +265,8 @@
                 <!-- Card 2: Acoustic Products -->
                 <div class="category-card" data-index="1">
                     <div class="card-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-4h2v2h-2zm0-10h2v8h-2z"
-                                stroke-width="1.5" />
-                        </svg>
+                                                <img src="{{asset('frontend_assets/images/banner_img.png')}}" alt="Hero Image" width="100px" />
+
                     </div>
                     <h3 class="card-title">Acoustic Products</h3>
                     <p class="card-items">40+ items</p>
@@ -281,11 +275,8 @@
                 <!-- Card 3: Writable Surfaces -->
                 <div class="category-card" data-index="2">
                     <div class="card-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
-                                stroke-width="1.5" />
-                        </svg>
+                                                <img src="{{asset('frontend_assets/images/banner_img.png')}}" alt="Hero Image" width="100px" />
+
                     </div>
                     <h3 class="card-title">Writable Surfaces</h3>
                     <p class="card-items">40+ items</p>
@@ -294,11 +285,8 @@
                 <!-- Card 4: Fabrics -->
                 <div class="category-card" data-index="3">
                     <div class="card-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm6 9.09c0 4-2.55 7.7-6 8.83-3.45-1.13-6-4.82-6-8.83V6.31l6-2.12 6 2.12v4.78z"
-                                stroke-width="1.5" />
-                        </svg>
+                                                <img src="{{asset('frontend_assets/images/banner_img.png')}}" alt="Hero Image" width="100px" />
+
                     </div>
                     <h3 class="card-title">Fabrics</h3>
                     <p class="card-items">40+ items</p>
@@ -307,13 +295,8 @@
                 <!-- Card 5: Greenwalls -->
                 <div class="category-card" data-index="4">
                     <div class="card-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.67c.08-.26.15-.52.22-.78C7.89 17.5 10.24 12 17 10l3 7h2l-5-12-5 3z"
-                                stroke-width="1.5" />
-                            <path d="M5.5 5c0 1.38 1.12 2.5 2.5 2.5S10.5 6.38 10.5 5 9.38 2.5 8 2.5 5.5 3.62 5.5 5z"
-                                stroke-width="1.5" />
-                        </svg>
+                                               <img src="{{asset('frontend_assets/images/banner_img.png')}}" alt="Hero Image" width="100px" />
+
                     </div>
                     <h3 class="card-title">Greenwalls</h3>
                     <p class="card-items">40+ items</p>
@@ -322,11 +305,8 @@
                 <!-- Card 6: Office Supplies -->
                 <div class="category-card" data-index="5">
                     <div class="card-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M14 2H6c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h12c1.11 0 2-.89 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"
-                                stroke-width="1.5" />
-                        </svg>
+                                                <img src="{{asset('frontend_assets/images/banner_img.png')}}" alt="Hero Image" width="100px" />
+
                     </div>
                     <h3 class="card-title">Office Supplies</h3>
                     <p class="card-items">40+ items</p>

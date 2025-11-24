@@ -303,7 +303,7 @@ body {
 
 /* Testimonial Section */
 .testimonial-section {
-    background: linear-gradient(135deg, #d4e8ff 0%, #cce5ff 100%);
+    /* background: linear-gradient(135deg, #d4e8ff 0%, #cce5ff 100%); */
     padding: 80px 40px;
 }
 
@@ -741,10 +741,10 @@ body {
 .category-card {
     min-width: 280px;
     height: 320px;
-    background: white;
+    background: #F4F9FF;
     border-radius: 20px;
     padding: 30px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
     cursor: pointer;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
@@ -758,13 +758,13 @@ body {
 /* Dynamic elevated class - 2nd and 4th positions */
 .category-card.elevated {
     transform: translateY(-30px);
-    box-shadow: 0 20px 50px rgba(0, 102, 255, 0.3);
-    background: linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%);
+    /* box-shadow: 0 20px 50px rgba(0, 102, 255, 0.3); */
+    background: #F4F9FF;
 }
 
 .category-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(0, 102, 255, 0.2);
+    /* box-shadow: 0 15px 40px rgba(0, 102, 255, 0.2); */
 }
 
 .category-card.elevated:hover {
@@ -778,13 +778,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #e6f2ff 0%, #cce5ff 100%);
+    background: #F4F9FF;
     border-radius: 50%;
     transition: all 0.4s ease;
 }
 
 .category-card.elevated .card-icon {
-    background: linear-gradient(135deg, #0066ff 0%, #0052cc 100%);
+    /* background: linear-gradient(135deg, #0066ff 0%, #0052cc 100%); */
     transform: scale(1.1);
 }
 
@@ -802,8 +802,8 @@ body {
 }
 
 .card-title {
-    font-size: 1.4rem;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 500;
     color: #0066ff;
     margin-bottom: 10px;
     transition: all 0.3s ease;
@@ -811,12 +811,12 @@ body {
 
 .category-card.elevated .card-title {
     color: #0052cc;
-    font-size: 1.5rem;
+    font-size: 24px;
 }
 
 .card-items {
     font-size: 0.95rem;
-    color: #666;
+    color: #0066ff;
     transition: all 0.3s ease;
 }
 

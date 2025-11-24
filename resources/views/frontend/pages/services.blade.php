@@ -2,45 +2,9 @@
 @section('title', 'Home - Welcome')
 @section('content')
     <link rel="stylesheet" href="{{ asset('frontend_assets/css/services.css') }}">
-     <nav class="navbar navbar-expand-lg navbar-custom">
-        <div class="container-fluid px-3 px-md-4">
-            <!-- ... -->
-            <a class="navbar-brand" href="#">totaloffice</a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="toggleMainContainer(event)">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Initiatives</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                </ul>
-
-                <div class="navbar-icons ms-auto">
-                    <a href="#"><i class="fas fa-search"></i></a>
-                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                    <a href="#"><i class="fas fa-user"></i></a>
-                    <button class="btn btn-book">Book a visit/call</button>
-                </div>
-            </div>
-        </div>
-    </nav>
-
     <!-- Hero Section -->
     <section class="services-hero">
-        <div class="services-hero-container">
+        <div class="container">
             <div class="services-breadcrumb">
                 <a href="#">Home</a> / <a href="#">Services</a>
             </div>
@@ -114,15 +78,15 @@
             <div class="services-content-left-alt">
                 <div class="services-content-illustration">
                     <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="150" cy="150" r="140" fill="#e6f0ff" stroke="none"/>
+                        <rect x="50" y="50" width="200" height="200" fill="#e6f0ff" rx="8"></rect>
                         <g stroke="#4a90e2" stroke-width="2" fill="none">
-                            <path d="M 100 120 Q 120 100 140 110"/>
-                            <path d="M 160 100 Q 180 110 190 130"/>
-                            <circle cx="150" cy="140" r="8"/>
-                            <path d="M 130 160 L 170 160"/>
-                            <path d="M 120 180 Q 150 200 180 180"/>
-                            <circle cx="140" cy="170" r="5"/>
-                            <circle cx="160" cy="175" r="5"/>
+                            <path d="M 100 120 Q 120 100 140 110"></path>
+                            <path d="M 160 100 Q 180 110 190 130"></path>
+                            <circle cx="150" cy="140" r="8"></circle>
+                            <path d="M 130 160 L 170 160"></path>
+                            <path d="M 120 180 Q 150 200 180 180"></path>
+                            <circle cx="140" cy="170" r="5"></circle>
+                            <circle cx="160" cy="175" r="5"></circle>
                         </g>
                     </svg>
                 </div>

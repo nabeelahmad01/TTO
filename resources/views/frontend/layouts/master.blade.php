@@ -12,6 +12,7 @@
     <script src="https://kit.fontawesome.com/6cbdf8a9b4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ asset('frontend_assets/css/footer.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend_assets/css/header.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend_assets/css/style.css') }}">
     @stack('styles')
 </head>
 
@@ -26,279 +27,241 @@
     <div class="modal fade" id="bookModal" tabindex="-1" aria-labelledby="bookModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="bookModalLabel">Book a visit/call</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+                <form action="{{ route('booking.store') }}" method="POST" id="bookingForm">
+                    @csrf
+                    <input type="hidden" name="type" id="bookingType">
+                    <input type="hidden" name="staff_member" id="bookingStaff">
+                    <input type="hidden" name="date" id="bookingDate">
+                    <input type="hidden" name="time" id="bookingTime">
+                    <input type="hidden" name="name" id="bookingName">
+                    <input type="hidden" name="email" id="bookingEmail">
+                    <input type="hidden" name="phone" id="bookingPhone">
+                    <input type="hidden" name="company_name" id="bookingCompany">
 
-                <!-- Step 1: Choose Visit or Call -->
-                <div class="modal-step" id="step1">
-                    <div class="modal-body">
-                        <p class="text-muted mb-4">Choose what you would like to do</p>
-                        <div class="d-flex flex-column gap-3">
-                            <button
-                                class="btn btn-outline-primary btn-lg text-start p-4 d-flex align-items-center justify-content-between"
-                                onclick="showStep(2, 'visit')">
-                                <div>
-                                    <h6 class="mb-1">Book a visit</h6>
-                                    <p class="small text-muted mb-0">
-                                        Schedule a visit to our showroom
-                                    </p>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="bookModalLabel">Book a visit/call</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <!-- Step 1: Choose Visit or Call -->
+                    <div class="modal-step" id="step1">
+                        <div class="modal-body">
+                            <p class="text-muted mb-4">Choose what you would like to do</p>
+                            <div class="d-flex flex-column gap-3">
+                                <button type="button"
+                                    class="btn btn-outline-primary btn-lg text-start p-4 d-flex align-items-center justify-content-between"
+                                    onclick="setBookingType('visit'); showStep(2, 'visit')">
+                                    <div>
+                                        <h6 class="mb-1">Book a visit</h6>
+                                        <p class="small text-muted mb-0">Schedule a visit to our showroom</p>
+                                    </div>
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                                <button type="button"
+                                    class="btn btn-outline-primary btn-lg text-start p-4 d-flex align-items-center justify-content-between"
+                                    onclick="setBookingType('call'); showStep(2, 'call')">
+                                    <div>
+                                        <h6 class="mb-1">Book a call</h6>
+                                        <p class="small text-muted mb-0">Schedule a call with our team</p>
+                                    </div>
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Select a Person (Visit) -->
+                    <div class="modal-step d-none" id="step2-visit">
+                        <div class="modal-body">
+                            <div class="d-flex align-items-center mb-4">
+                                <button type="button" class="btn-back me-3" onclick="showStep(1)">
+                                    <i class="fas fa-arrow-left"></i>
+                                </button>
+                                <h6 class="modal-step-title mb-0">Select a person</h6>
+                            </div>
+
+                            <div class="person-card mb-3 p-3 border rounded d-flex align-items-center"
+                                onclick="selectPerson(this, 'John Doe')">
+                                <div class="person-avatar me-3"><i class="fas fa-user"></i></div>
+                                <div class="flex-grow-1">
+                                    <h6 class="mb-1">John Doe</h6>
+                                    <p class="small text-muted mb-0">Sales Executive</p>
                                 </div>
-                                <i class="fas fa-chevron-right"></i>
-                            </button>
-                            <button
-                                class="btn btn-outline-primary btn-lg text-start p-4 d-flex align-items-center justify-content-between"
-                                onclick="showStep(2, 'call')">
-                                <div>
-                                    <h6 class="mb-1">Book a call</h6>
-                                    <p class="small text-muted mb-0">
-                                        Schedule a call with our team
-                                    </p>
+                                <i class="fas fa-check-circle text-primary" style="display:none"></i>
+                                <i class="far fa-circle"></i>
+                            </div>
+
+                            <div class="person-card mb-3 p-3 border rounded d-flex align-items-center"
+                                onclick="selectPerson(this, 'Mike Shake')">
+                                <div class="person-avatar me-3"><i class="fas fa-user"></i></div>
+                                <div class="flex-grow-1">
+                                    <h6 class="mb-1">Mike Shake</h6>
+                                    <p class="small text-muted mb-0">Sales Manager</p>
                                 </div>
-                                <i class="fas fa-chevron-right"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Step 2: Select a Person (Visit) -->
-                <div class="modal-step d-none" id="step2-visit">
-                    <div class="modal-body">
-                        <div class="d-flex align-items-center mb-4">
-                            <button type="button" class="btn-back me-3" onclick="showStep(1)">
-                                <i class="fas fa-arrow-left"></i>
-                            </button>
-                            <h6 class="modal-step-title mb-0">Select a person</h6>
-                        </div>
-
-                        <div class="person-card mb-3 p-3 border rounded d-flex align-items-center"
-                            onclick="selectPerson(this, 'John Doe')">
-                            <div class="person-avatar me-3">
-                                <i class="fas fa-user"></i>
+                                <i class="fas fa-check-circle text-primary" style="display:none"></i>
+                                <i class="far fa-circle"></i>
                             </div>
-                            <div class="flex-grow-1">
-                                <h6 class="mb-1">John Doe</h6>
-                                <p class="small text-muted mb-0">Sales Executive</p>
+
+                            <button type="button" class="btn btn-primary w-100 mt-3" onclick="showStep(3, 'visit')">Confirm meeting</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Select a Person (Call) -->
+                    <div class="modal-step d-none" id="step2-call">
+                        <div class="modal-body">
+                            <div class="d-flex align-items-center mb-4">
+                                <button type="button" class="btn-back me-3" onclick="showStep(1)">
+                                    <i class="fas fa-arrow-left"></i>
+                                </button>
+                                <h6 class="modal-step-title mb-0">Select a person</h6>
                             </div>
-                            <i class="fas fa-check-circle text-primary"></i>
-                        </div>
 
-                        <div class="person-card mb-3 p-3 border rounded d-flex align-items-center"
-                            onclick="selectPerson(this, 'Mike Shake')">
-                            <div class="person-avatar me-3">
-                                <i class="fas fa-user"></i>
+                            <div class="person-card mb-3 p-3 border rounded d-flex align-items-center"
+                                onclick="selectPerson(this, 'John Doe')">
+                                <div class="person-avatar me-3"><i class="fas fa-user"></i></div>
+                                <div class="flex-grow-1">
+                                    <h6 class="mb-1">John Doe</h6>
+                                    <p class="small text-muted mb-0">Sales Executive</p>
+                                </div>
+                                <i class="fas fa-check-circle text-primary" style="display:none"></i>
+                                <i class="far fa-circle"></i>
                             </div>
-                            <div class="flex-grow-1">
-                                <h6 class="mb-1">Mike Shake</h6>
-                                <p class="small text-muted mb-0">Sales Manager</p>
+
+                            <div class="person-card mb-3 p-3 border rounded d-flex align-items-center"
+                                onclick="selectPerson(this, 'Mike Shake')">
+                                <div class="person-avatar me-3"><i class="fas fa-user"></i></div>
+                                <div class="flex-grow-1">
+                                    <h6 class="mb-1">Mike Shake</h6>
+                                    <p class="small text-muted mb-0">Sales Manager</p>
+                                </div>
+                                <i class="fas fa-check-circle text-primary" style="display:none"></i>
+                                <i class="far fa-circle"></i>
                             </div>
-                            <i class="far fa-circle"></i>
-                        </div>
 
-                        <button class="btn btn-primary w-100 mt-3" onclick="showStep(3, 'visit')">
-                            Confirm meeting
-                        </button>
+                            <button type="button" class="btn btn-primary w-100 mt-3" onclick="showStep(3, 'call')">Next</button>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Step 2: Select a Person (Call) -->
-                <div class="modal-step d-none" id="step2-call">
-                    <div class="modal-body">
-                        <div class="d-flex align-items-center mb-4">
-                            <button type="button" class="btn-back me-3" onclick="showStep(1)">
-                                <i class="fas fa-arrow-left"></i>
-                            </button>
-                            <h6 class="modal-step-title mb-0">Select a person</h6>
-                        </div>
-
-                        <div class="person-card mb-3 p-3 border rounded d-flex align-items-center"
-                            onclick="selectPerson(this, 'John Doe')">
-                            <div class="person-avatar me-3">
-                                <i class="fas fa-user"></i>
+                    <!-- Step 3: Enter Details (Visit) -->
+                    <div class="modal-step d-none" id="step3-visit">
+                        <div class="modal-body">
+                            <div class="d-flex align-items-center mb-4">
+                                <button type="button" class="btn-back me-3" onclick="showStep(2, 'visit')">
+                                    <i class="fas fa-arrow-left"></i>
+                                </button>
+                                <h6 class="modal-step-title mb-0">Enter your details</h6>
                             </div>
-                            <div class="flex-grow-1">
-                                <h6 class="mb-1">John Doe</h6>
-                                <p class="small text-muted mb-0">Sales Executive</p>
+
+                            <div class="mb-3">
+                                <label class="form-label small text-muted">Full name</label>
+                                <input type="text" class="form-control" placeholder="Enter your full name" oninput="updateHidden('bookingName', this.value)" />
                             </div>
-                            <i class="fas fa-check-circle text-primary"></i>
-                        </div>
-
-                        <div class="person-card mb-3 p-3 border rounded d-flex align-items-center"
-                            onclick="selectPerson(this, 'Mike Shake')">
-                            <div class="person-avatar me-3">
-                                <i class="fas fa-user"></i>
+                            <div class="mb-3">
+                                <label class="form-label small text-muted">Email address</label>
+                                <input type="email" class="form-control" placeholder="Enter your email" oninput="updateHidden('bookingEmail', this.value)" />
                             </div>
-                            <div class="flex-grow-1">
-                                <h6 class="mb-1">Mike Shake</h6>
-                                <p class="small text-muted mb-0">Sales Manager</p>
+                            <div class="mb-3">
+                                <label class="form-label small text-muted">Company name</label>
+                                <input type="text" class="form-control" placeholder="Enter company name" oninput="updateHidden('bookingCompany', this.value)" />
                             </div>
-                            <i class="far fa-circle"></i>
-                        </div>
 
-                        <button class="btn btn-primary w-100 mt-3" onclick="showStep(3, 'call')">
-                            Next
-                        </button>
+                            <button type="button" class="btn btn-primary w-100" onclick="showStep(4, 'visit')">Next</button>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Step 3: Enter Details (Visit) -->
-                <div class="modal-step d-none" id="step3-visit">
-                    <div class="modal-body">
-                        <div class="d-flex align-items-center mb-4">
-                            <button type="button" class="btn-back me-3" onclick="showStep(2, 'visit')">
-                                <i class="fas fa-arrow-left"></i>
-                            </button>
-                            <h6 class="modal-step-title mb-0">Enter your details</h6>
-                        </div>
+                    <!-- Step 3: Select Date & Time (Call) -->
+                    <div class="modal-step d-none" id="step3-call">
+                        <div class="modal-body">
+                            <div class="d-flex align-items-center mb-4">
+                                <button type="button" class="btn-back me-3" onclick="showStep(2, 'call')">
+                                    <i class="fas fa-arrow-left"></i>
+                                </button>
+                                <h6 class="modal-step-title mb-0">Select date & time</h6>
+                            </div>
 
-                        <div class="mb-3">
-                            <label class="form-label small text-muted">Full name</label>
-                            <input type="text" class="form-control" placeholder="Enter your full name" />
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label small text-muted">Email address</label>
-                            <input type="email" class="form-control" placeholder="Enter your email" />
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label small text-muted">Company name</label>
-                            <input type="text" class="form-control" placeholder="Enter company name" />
-                        </div>
+                            <div class="mb-3">
+                                <label class="form-label small text-muted">Select date</label>
+                                <input type="date" class="form-control" onchange="updateHidden('bookingDate', this.value)" />
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label small text-muted">Select time</label>
+                                <select class="form-select" onchange="updateHidden('bookingTime', this.value)">
+                                    <option value="">Select Time</option>
+                                    <option>09:00 AM</option>
+                                    <option>10:00 AM</option>
+                                    <option>11:00 AM</option>
+                                    <option>01:00 PM</option>
+                                    <option>02:00 PM</option>
+                                    <option>03:00 PM</option>
+                                </select>
+                            </div>
 
-                        <button class="btn btn-primary w-100" onclick="showStep(4, 'visit')">
-                            Next
-                        </button>
+                            <button type="button" class="btn btn-primary w-100" onclick="showStep(4, 'call')">Next</button>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Step 3: Select Date & Time (Call) -->
-                <div class="modal-step d-none" id="step3-call">
-                    <div class="modal-body">
-                        <div class="d-flex align-items-center mb-4">
-                            <button type="button" class="btn-back me-3" onclick="showStep(2, 'call')">
-                                <i class="fas fa-arrow-left"></i>
-                            </button>
-                            <h6 class="modal-step-title mb-0">Select date & time</h6>
-                        </div>
+                    <!-- Step 4: Select Date & Time (Visit) -->
+                    <div class="modal-step d-none" id="step4-visit">
+                        <div class="modal-body">
+                            <div class="d-flex align-items-center mb-4">
+                                <button type="button" class="btn-back me-3" onclick="showStep(3, 'visit')">
+                                    <i class="fas fa-arrow-left"></i>
+                                </button>
+                                <h6 class="modal-step-title mb-0">Select date & time</h6>
+                            </div>
 
-                        <div class="mb-3">
-                            <label class="form-label small text-muted">Select date</label>
-                            <input type="date" class="form-control" />
-                        </div>
-                        <div class="mb-4">
-                            <label class="form-label small text-muted">Select time</label>
-                            <select class="form-select">
-                                <option>09:00 AM</option>
-                                <option>10:00 AM</option>
-                                <option>11:00 AM</option>
-                                <option>01:00 PM</option>
-                                <option>02:00 PM</option>
-                                <option>03:00 PM</option>
-                            </select>
-                        </div>
+                            <div class="mb-3">
+                                <label class="form-label small text-muted">Select date</label>
+                                <input type="date" class="form-control" onchange="updateHidden('bookingDate', this.value)" />
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label small text-muted">Select time</label>
+                                <select class="form-select" onchange="updateHidden('bookingTime', this.value)">
+                                    <option value="">Select Time</option>
+                                    <option>09:00 AM</option>
+                                    <option>10:00 AM</option>
+                                    <option>11:00 AM</option>
+                                    <option>01:00 PM</option>
+                                    <option>02:00 PM</option>
+                                    <option>03:00 PM</option>
+                                </select>
+                            </div>
 
-                        <button class="btn btn-primary w-100" onclick="showStep(4, 'call')">
-                            Next
-                        </button>
+                            <button type="submit" class="btn btn-primary w-100">Book visit</button>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Step 4: Select Date & Time (Visit) -->
-                <div class="modal-step d-none" id="step4-visit">
-                    <div class="modal-body">
-                        <div class="d-flex align-items-center mb-4">
-                            <button type="button" class="btn-back me-3" onclick="showStep(3, 'visit')">
-                                <i class="fas fa-arrow-left"></i>
-                            </button>
-                            <h6 class="modal-step-title mb-0">Select date & time</h6>
-                        </div>
+                    <!-- Step 4: Enter Details (Call) -->
+                    <div class="modal-step d-none" id="step4-call">
+                        <div class="modal-body">
+                            <div class="d-flex align-items-center mb-4">
+                                <button type="button" class="btn-back me-3" onclick="showStep(3, 'call')">
+                                    <i class="fas fa-arrow-left"></i>
+                                </button>
+                                <h6 class="modal-step-title mb-0">Enter your details</h6>
+                            </div>
 
-                        <div class="mb-3">
-                            <label class="form-label small text-muted">Select date</label>
-                            <input type="date" class="form-control" />
-                        </div>
-                        <div class="mb-4">
-                            <label class="form-label small text-muted">Select time</label>
-                            <select class="form-select">
-                                <option>09:00 AM</option>
-                                <option>10:00 AM</option>
-                                <option>11:00 AM</option>
-                                <option>01:00 PM</option>
-                                <option>02:00 PM</option>
-                                <option>03:00 PM</option>
-                            </select>
-                        </div>
+                            <div class="mb-3">
+                                <label class="form-label small text-muted">Full name</label>
+                                <input type="text" class="form-control" placeholder="Enter your full name" oninput="updateHidden('bookingName', this.value)" />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label small text-muted">Email address</label>
+                                <input type="email" class="form-control" placeholder="Enter your email" oninput="updateHidden('bookingEmail', this.value)" />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label small text-muted">Phone number</label>
+                                <input type="tel" class="form-control" placeholder="Enter your phone number" oninput="updateHidden('bookingPhone', this.value)" />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label small text-muted">Company name</label>
+                                <input type="text" class="form-control" placeholder="Enter company name" oninput="updateHidden('bookingCompany', this.value)" />
+                            </div>
 
-                        <button class="btn btn-primary w-100" onclick="showStep(5, 'visit')">
-                            Book visit
-                        </button>
+                            <button type="submit" class="btn btn-primary w-100">Book call</button>
+                        </div>
                     </div>
-                </div>
-
-                <!-- Step 4: Enter Details (Call) -->
-                <div class="modal-step d-none" id="step4-call">
-                    <div class="modal-body">
-                        <div class="d-flex align-items-center mb-4">
-                            <button type="button" class="btn-back me-3" onclick="showStep(3, 'call')">
-                                <i class="fas fa-arrow-left"></i>
-                            </button>
-                            <h6 class="modal-step-title mb-0">Enter your details</h6>
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label small text-muted">Full name</label>
-                            <input type="text" class="form-control" placeholder="Enter your full name" />
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label small text-muted">Email address</label>
-                            <input type="email" class="form-control" placeholder="Enter your email" />
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label small text-muted">Phone number</label>
-                            <input type="tel" class="form-control" placeholder="Enter your phone number" />
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label small text-muted">Company name</label>
-                            <input type="text" class="form-control" placeholder="Enter company name" />
-                        </div>
-
-                        <button class="btn btn-primary w-100" onclick="showStep(5, 'call')">
-                            Book call
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Step 5: Confirmation (Visit) -->
-                <div class="modal-step d-none" id="step5-visit">
-                    <div class="modal-body text-center py-5">
-                        <div class="checkmark-circle mb-4">
-                            <i class="fas fa-check"></i>
-                        </div>
-                        <h5 class="mb-3">Your visit is confirmed!</h5>
-                        <p class="text-muted mb-4">
-                            We've sent you a confirmation email with all the details.
-                        </p>
-                        <button class="btn btn-outline-primary" data-bs-dismiss="modal">
-                            Close
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Step 5: Confirmation (Call) -->
-                <div class="modal-step d-none" id="step5-call">
-                    <div class="modal-body text-center py-5">
-                        <div class="checkmark-circle mb-4">
-                            <i class="fas fa-check"></i>
-                        </div>
-                        <h5 class="mb-3">Your call is scheduled!</h5>
-                        <p class="text-muted mb-4">
-                            We've sent you a confirmation email with all the details.
-                        </p>
-                        <button class="btn btn-outline-primary" data-bs-dismiss="modal">
-                            Close
-                        </button>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
@@ -326,6 +289,14 @@
                 input.min = today;
             });
         });
+
+        function setBookingType(type) {
+            document.getElementById('bookingType').value = type;
+        }
+
+        function updateHidden(id, value) {
+            document.getElementById(id).value = value;
+        }
 
         // Show specific step in the modal
         function showStep(step, type = "") {
@@ -363,6 +334,7 @@
             // Add selected class to clicked card
             element.classList.add("selected");
             selectedPerson = name;
+            document.getElementById('bookingStaff').value = name;
 
             // Update the checkmark icons
             const checkIcons = element.parentElement.querySelectorAll(
@@ -380,6 +352,7 @@
         // Reset form
         function resetForm() {
             selectedPerson = null;
+            document.getElementById('bookingForm').reset();
             document.querySelectorAll(".person-card").forEach((card) => {
                 card.classList.remove("selected");
                 const checkIcons = card.querySelectorAll(
@@ -392,9 +365,6 @@
                         icon.style.display = "block";
                     }
                 });
-            });
-            document.querySelectorAll("input, select").forEach((input) => {
-                input.value = "";
             });
         }
 

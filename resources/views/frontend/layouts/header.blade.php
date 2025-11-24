@@ -21,17 +21,17 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a id="navServices" class="nav-link" href="#">Services</a>
+                        <a id="navServices" class="nav-link" href="{{ route('services') }}">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a id="navProducts" class="nav-link" href="#"
+                        <a id="navProducts" class="nav-link" href="{{ route('products') }}"
                             onclick="toggleMainContainer(event)">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Initiatives</a>
+                        <a class="nav-link" href="{{ route('initiatives') }}">Initiatives</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="{{ route('about') }}">About</a>
                     </li>
                     <li class="nav-item">
                         <button class="btn btn-book">Book a visit/call</button>

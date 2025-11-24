@@ -1,15 +1,3 @@
-:root {
-    --ab-primary: #0066ff;
-    --ab-dark: #0052cc;
-    --ab-border: #e6efff;
-    --ab-soft: #f3f8ff;
-}
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        "Helvetica Neue", Arial, sans-serif;
-    background: #fff;
-}
-
 /* Hero */
 .ab-hero {
     background: var(--ab-soft);
@@ -22,7 +10,7 @@ body {
     text-align: center;
 }
 .ab-hero-title {
-    color: var(--ab-primary);
+    color: var(--primary-color);
     font-weight: 800;
     font-size: 54px;
     text-align: center;
@@ -38,7 +26,7 @@ body {
     padding: 46px 0 36px;
 }
 .ab-about h3 {
-    color: var(--ab-primary);
+    color: var(--primary-color);
     font-weight: 800;
     margin-bottom: 12px;
 }
@@ -65,7 +53,7 @@ body {
     padding: 34px 0 40px;
 }
 .ab-usp h3 {
-    color: var(--ab-primary);
+    color: var(--primary-color);
     font-weight: 800;
     text-align: center;
 }
@@ -76,17 +64,17 @@ body {
     margin: 8px auto 20px;
 }
 .ab-usp .nav-link {
-    color: var(--ab-primary);
+    color: var(--primary-color);
     font-weight: 800;
     border: 1px solid #d7e6ff;
     margin-right: 8px;
 }
 .ab-usp .nav-link.active {
-    background: var(--ab-primary);
+    background: var(--primary-color);
     color: #fff;
 }
 .ab-usp .usp-title {
-    color: var(--ab-primary);
+    color: var(--primary-color);
     font-weight: 800;
     border-bottom: 2px solid #cfe0ff;
     display: inline-block;
@@ -115,17 +103,17 @@ body {
     padding: 32px 0 40px;
 }
 .ab-history .nav-link {
-    color: var(--ab-primary);
+    color: var(--primary-color);
     font-weight: 800;
     border: 1px solid #d7e6ff;
     margin-right: 8px;
 }
 .ab-history .nav-link.active {
-    background: var(--ab-primary);
+    background: var(--primary-color);
     color: #fff;
 }
 .ab-history h2 {
-    color: var(--ab-primary);
+    color: var(--primary-color);
     font-weight: 800;
     font-size: 42px;
     margin: 16px 0;
@@ -151,18 +139,18 @@ body {
 }
 .ab-team h3 {
     text-align: center;
-    color: var(--ab-primary);
+    color: var(--primary-color);
     font-weight: 800;
     margin-bottom: 12px;
 }
 .ab-team .nav-link {
-    color: var(--ab-primary);
+    color: var(--primary-color);
     font-weight: 800;
     border: 1px solid #d7e6ff;
     margin: 0 6px;
 }
 .ab-team .nav-link.active {
-    background: var(--ab-primary);
+    background: var(--primary-color);
     color: #fff;
 }
 .ab-team-group {
@@ -200,7 +188,7 @@ body {
     padding: 34px 0 40px;
 }
 .ab-sus h3 {
-    color: var(--ab-primary);
+    color: var(--primary-color);
     font-weight: 800;
     margin-bottom: 16px;
 }
@@ -213,7 +201,7 @@ body {
     font-weight: 800;
 }
 .ab-sname {
-    color: var(--ab-primary);
+    color: var(--primary-color);
     font-weight: 800;
 }
 .ab-sdesc {
@@ -227,7 +215,7 @@ body {
     padding: 34px 0;
 }
 .ab-test h3 {
-    color: var(--ab-primary);
+    color: var(--primary-color);
     font-weight: 800;
     margin-bottom: 14px;
 }
@@ -259,7 +247,7 @@ body {
     height: 42px;
     border-radius: 50%;
     border: none;
-    background: var(--ab-primary);
+    background: var(--primary-color);
     color: #fff;
     display: flex;
     align-items: center;

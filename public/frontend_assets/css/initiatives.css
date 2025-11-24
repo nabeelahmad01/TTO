@@ -1,18 +1,6 @@
-:root {
-    --in-primary: #0066ff;
-    --in-dark: #0052cc;
-    --in-border: #e6efff;
-    --in-soft: #f3f8ff;
-}
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        "Helvetica Neue", Arial, sans-serif;
-    background: #ffffff;
-}
-
 /* Hero */
 .in-hero {
-    background: var(--in-soft);
+    background: #f0f7ff;
     border-bottom: 1px solid #e0e0e0;
     padding: 56px 0 32px;
 }
@@ -21,7 +9,7 @@ body {
     font-size: 13px;
 }
 .in-title {
-    color: var(--in-primary);
+    color: var(--primary-color);
     font-weight: 800;
     font-size: 42px;
     margin-top: 6px;
@@ -35,7 +23,7 @@ body {
     padding: 24px 22px;
 }
 .in-card h4 {
-    color: var(--in-primary);
+    color: var(--primary-color);
     font-weight: 800;
     margin: 0 0 8px;
 }
@@ -44,7 +32,7 @@ body {
     margin: 0 0 12px;
 }
 .in-link {
-    color: var(--in-primary);
+    color: var(--primary-color);
     text-decoration: none;
     font-weight: 700;
 }
