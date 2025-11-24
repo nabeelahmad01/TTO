@@ -10,7 +10,7 @@
     </div>
     <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container px-3 px-md-4">
-            <a class="navbar-brand" href="#"><img class="logo_img"
+            <a class="navbar-brand" href="{{ route('home') }}"><img class="logo_img"
                     src="{{ asset('frontend_assets/images/logo.png') }}" alt="Logo"></a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -48,30 +48,30 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-4">
- <div class="mega-card-title">Service Listing</div>
-            <div class="mega-card-desc">
-                Sed et mollis massa, vitae rhoncus nibh. Sed accumsan tincidunt.
-            </div>
-            <a href="#" class="mega-card-link">Learn More <i class="fas fa-arrow-right"
-                    style="margin-left: 6px"></i></a>
-            </div>
-            <div class="col-lg-4">
-<div class="mega-card-title">
-                The Ideal workspace : Our six step unique process
-            </div>
-            <div class="mega-card-desc">
-                Sed et mollis massa, vitae rhoncus nibh. Sed accumsan tincidunt.
-            </div>
-            <a href="#" class="mega-card-link">Learn More <i class="fas fa-arrow-right"
-                    style="margin-left: 6px"></i></a>
+                <div class="mega-card-title">Service Listing</div>
+                <div class="mega-card-desc">
+                    Sed et mollis massa, vitae rhoncus nibh. Sed accumsan tincidunt.
+                </div>
+                <a href="{{ route('service.listing') }}" class="mega-card-link">Learn More <i class="fas fa-arrow-right"
+                        style="margin-left: 6px"></i></a>
             </div>
             <div class="col-lg-4">
-<div class="mega-card-title">Moodboards</div>
-            <div class="mega-card-desc">
-                Sed et mollis massa, vitae rhoncus nibh. Sed accumsan tincidunt.
+                <div class="mega-card-title">
+                    The Ideal workspace : Our six step unique process
+                </div>
+                <div class="mega-card-desc">
+                    Sed et mollis massa, vitae rhoncus nibh. Sed accumsan tincidunt.
+                </div>
+                <a href="{{ route('ideal.workspace') }}" class="mega-card-link">Learn More <i class="fas fa-arrow-right"
+                        style="margin-left: 6px"></i></a>
             </div>
-            <a href="#" class="mega-card-link">Learn More <i class="fas fa-arrow-right"
-                    style="margin-left: 6px"></i></a>
+            <div class="col-lg-4">
+                <div class="mega-card-title">Moodboards</div>
+                <div class="mega-card-desc">
+                    Sed et mollis massa, vitae rhoncus nibh. Sed accumsan tincidunt.
+                </div>
+                <a href="{{ route('moodboards') }}" class="mega-card-link">Learn More <i class="fas fa-arrow-right"
+                        style="margin-left: 6px"></i></a>
             </div>
         </div>
     </div>
