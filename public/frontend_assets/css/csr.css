@@ -1,14 +1,3 @@
-:root {
-    --csr-primary: #0066ff;
-    --csr-dark: #0052cc;
-    --csr-border: #e6efff;
-    --csr-soft: #f3f8ff;
-}
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        "Helvetica Neue", Arial, sans-serif;
-    background: #ffffff;
-}
 
 /* Hero split */
 .csr-hero {
@@ -37,7 +26,7 @@ body {
     margin-bottom: 8px;
 }
 .csr-title {
-    color: var(--csr-primary);
+    color: var(--primary-color);
     font-weight: 800;
     font-size: 38px;
     line-height: 1.15;
@@ -52,7 +41,7 @@ body {
     padding: 40px 0;
 }
 .csr-intro h3 {
-    color: var(--csr-primary);
+    color: var(--primary-color);
     font-weight: 800;
     margin-bottom: 14px;
 }
@@ -65,7 +54,7 @@ body {
     padding: 28px 0 70px;
 }
 .csr-acc h3 {
-    color: var(--csr-primary);
+    color: var(--primary-color);
     font-weight: 800;
     margin-bottom: 12px;
 }
@@ -78,7 +67,7 @@ body {
     font-weight: 800;
 }
 .csr-name {
-    color: var(--csr-primary);
+    color: var(--primary-color);
     font-weight: 800;
 }
 .csr-desc {

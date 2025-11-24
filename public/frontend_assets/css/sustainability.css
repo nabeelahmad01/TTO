@@ -1,14 +1,3 @@
-:root {
-    --su-primary: #0066ff;
-    --su-dark: #0052cc;
-    --su-border: #e6efff;
-    --su-soft: #f3f8ff;
-}
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        "Helvetica Neue", Arial, sans-serif;
-    background: #ffffff;
-}
 
 /* Hero split (image + text) */
 .su-hero {
@@ -37,7 +26,7 @@ body {
     margin-bottom: 8px;
 }
 .su-title {
-    color: var(--su-primary);
+    color: var(--primary-color);
     font-weight: 800;
     font-size: 36px;
     line-height: 1.15;
@@ -52,7 +41,7 @@ body {
     padding: 40px 0;
 }
 .su-intro h3 {
-    color: var(--su-primary);
+    color: var(--primary-color);
     font-weight: 800;
     margin-bottom: 14px;
 }
@@ -65,7 +54,7 @@ body {
     padding: 10px 0 70px;
 }
 .su-acc h3 {
-    color: var(--su-primary);
+    color: var(--primary-color);
     font-weight: 800;
     margin-bottom: 12px;
 }
@@ -78,7 +67,7 @@ body {
     font-weight: 800;
 }
 .su-name {
-    color: var(--su-primary);
+    color: var(--primary-color);
     font-weight: 800;
 }
 .su-desc {

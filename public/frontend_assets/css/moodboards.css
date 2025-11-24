@@ -1,16 +1,4 @@
-:root {
-    --mb-primary: #0066ff;
-    --mb-dark: #0052cc;
-    --mb-border: #e0e0e0;
-    --mb-soft: #eaf3ff;
-    --mb-card: #f6faff;
-}
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        "Helvetica Neue", Arial, sans-serif;
-    background: #fff;
-    color: #114;
-}
+
 
 /* Navbar */
 .mb-nav {
@@ -20,7 +8,7 @@ body {
 }
 .mb-nav .navbar-brand,
 .mb-nav .nav-link {
-    color: var(--mb-primary) !important;
+    color: var(--primary-color) !important;
     font-weight: 700;
 }
 
@@ -35,7 +23,7 @@ body {
     font-size: 14px;
 }
 .mb-title {
-    color: var(--mb-primary);
+    color: var(--primary-color);
     font-weight: 800;
     font-size: 42px;
     margin-top: 12px;
@@ -50,7 +38,7 @@ body {
 }
 .mb-filter-btn {
     background: #f5f9ff;
-    color: var(--mb-primary);
+    color: var(--primary-color);
     border: 1px solid #e6efff;
     border-radius: 6px;
     font-weight: 700;
@@ -88,7 +76,7 @@ body {
     position: absolute;
     top: 12px;
     left: 12px;
-    color: var(--mb-primary);
+    color: var(--primary-color);
     font-size: 18px;
 }
 .mb-illus {
@@ -100,7 +88,7 @@ body {
 }
 .mb-card-title {
     margin: 0 0 6px;
-    color: var(--mb-primary);
+    color: var(--primary-color);
     font-weight: 800;
     font-size: 18px;
 }
@@ -136,7 +124,7 @@ body {
     color: #1d5fd8;
 }
 .mb-page-num.active {
-    background: var(--mb-primary);
+    background: var(--primary-color);
     color: #fff;
 }
 
@@ -158,13 +146,13 @@ body {
     align-items: start;
 }
 .footer-logo {
-    color: var(--mb-primary);
+    color: var(--primary-color);
     font-weight: 800;
     font-size: 28px;
     margin-bottom: 10px;
 }
 .footer-column-title {
-    color: var(--mb-primary);
+    color: var(--primary-color);
     font-weight: 800;
     font-size: 14px;
     margin-bottom: 10px;
@@ -175,7 +163,7 @@ body {
     gap: 8px;
 }
 .footer-link {
-    color: var(--mb-primary);
+    color: var(--primary-color);
     text-decoration: none;
     font-size: 13px;
 }
@@ -195,7 +183,7 @@ body {
     font-size: 13px;
 }
 .newsletter-btn {
-    background: var(--mb-primary);
+    background: var(--primary-color);
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -208,7 +196,7 @@ body {
     gap: 10px;
 }
 .social-icon {
-    color: var(--mb-primary);
+    color: var(--primary-color);
     font-size: 16px;
 }
 .footer-bottom {

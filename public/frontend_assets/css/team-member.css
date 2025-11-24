@@ -1,13 +1,3 @@
-:root {
-    --tm-primary: #0066ff;
-    --tm-dark: #0052cc;
-    --tm-border: #e6efff;
-}
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        "Helvetica Neue", Arial, sans-serif;
-    background: #eaf3ff;
-}
 
 /* Page background like screenshot */
 .tm-bg {
@@ -83,7 +73,7 @@ body {
 }
 
 .tm-name {
-    color: var(--tm-primary);
+    color: var(--primary-color);
     font-weight: 800;
     font-size: 24px;
     margin: 0;

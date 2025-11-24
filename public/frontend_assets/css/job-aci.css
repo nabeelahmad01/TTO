@@ -1,13 +1,3 @@
-:root {
-    --jd-primary: #0066ff;
-    --jd-border: #e6efff;
-    --jd-soft: #f3f8ff;
-}
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        "Helvetica Neue", Arial, sans-serif;
-    background: #fff;
-}
 
 /* Hero */
 .jd-hero {
@@ -20,7 +10,7 @@ body {
     font-size: 13px;
 }
 .jd-title {
-    color: var(--jd-primary);
+    color: var(--primary-color);
     font-weight: 800;
     font-size: 42px;
     margin-top: 8px;
@@ -28,7 +18,7 @@ body {
 
 /* Content */
 .jd-section h4 {
-    color: var(--jd-primary);
+    color: var(--primary-color);
     font-weight: 800;
     margin: 18px 0 10px;
 }
@@ -65,7 +55,7 @@ body {
     margin-top: 24px;
 }
 .jd-rel h4 {
-    color: var(--jd-primary);
+    color: var(--primary-color);
     font-weight: 800;
     margin-bottom: 12px;
 }

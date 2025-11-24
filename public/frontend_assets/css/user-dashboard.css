@@ -1,17 +1,4 @@
 
-        :root {
-            --primary-color: #0066ff;
-            --secondary-color: #6c757d;
-            --light-gray: #f8f9fa;
-            --border-color: #e9ecef;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f5f7fa;
-            color: #333;
-        }
-
         .dashboard-container {
             max-width: 1200px;
             margin: 0 auto;

@@ -1,13 +1,3 @@
-:root {
-    --crs-primary: #0066ff;
-    --crs-border: #e6efff;
-    --crs-soft: #f3f8ff;
-}
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        "Helvetica Neue", Arial, sans-serif;
-    background: #fff;
-}
 
 /* Hero split */
 .crs-hero {
@@ -18,7 +8,7 @@ body {
 .crs-left {
     min-height: 320px;
     background: #eef5ff;
-    border-right: 1px solid var(--crs-border);
+    border-right: 1px solid #e6efff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,7 +28,7 @@ body {
     margin-bottom: 8px;
 }
 .crs-title {
-    color: var(--crs-primary);
+    color: var(--primary-color);
     font-weight: 800;
     font-size: 42px;
     line-height: 1.15;
@@ -54,7 +44,7 @@ body {
     padding: 36px 0;
 }
 .crs-values h3 {
-    color: var(--crs-primary);
+    color: var(--primary-color);
     font-weight: 800;
     margin-bottom: 16px;
 }
@@ -67,7 +57,7 @@ body {
     font-weight: 800;
 }
 .crs-vname {
-    color: var(--crs-primary);
+    color: var(--primary-color);
     font-weight: 800;
 }
 .crs-vdesc {
@@ -79,14 +69,14 @@ body {
     padding: 20px 0 40px;
 }
 .crs-experts h3 {
-    color: var(--crs-primary);
+    color: var(--primary-color);
     font-weight: 800;
     margin-bottom: 10px;
 }
 .crs-big {
     height: 240px;
     background: #eef5ff;
-    border: 1px solid var(--crs-border);
+    border: 1px solid #e6efff;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -95,7 +85,7 @@ body {
 .crs-thumb {
     height: 90px;
     background: #eef5ff;
-    border: 1px solid var(--crs-border);
+    border: 1px solid #e6efff;
     border-radius: 8px;
 }
 
@@ -104,19 +94,19 @@ body {
     padding: 10px 0 46px;
 }
 .crs-vac h3 {
-    color: var(--crs-primary);
+    color: var(--primary-color);
     font-weight: 800;
     text-align: center;
     margin-bottom: 18px;
 }
 .crs-job {
     background: #fff;
-    border: 1px solid var(--crs-border);
+    border: 1px solid #e6efff;
     border-radius: 8px;
     padding: 16px;
 }
 .crs-job h5 {
-    color: var(--crs-primary);
+    color: var(--primary-color);
     font-weight: 800;
     margin-bottom: 8px;
 }
@@ -129,7 +119,7 @@ body {
     font-size: 14px;
 }
 .crs-link {
-    color: var(--crs-primary);
+    color: var(--primary-color);
     font-weight: 700;
     text-decoration: none;
 }
@@ -139,7 +129,7 @@ body {
     padding: 30px 0 60px;
 }
 .crs-form h3 {
-    color: var(--crs-primary);
+    color: var(--primary-color);
     font-weight: 800;
     text-align: center;
     margin-bottom: 18px;
@@ -178,7 +168,7 @@ textarea.form-control {
 }
 .crs-submit {
     width: 100%;
-    background: var(--crs-primary);
+    background: var(--primary-color);
     color: #fff;
     border: none;
     height: 40px;

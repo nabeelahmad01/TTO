@@ -1,16 +1,4 @@
 
-    :root {
-      --ap-primary: #0066ff;
-      --ap-dark: #0052cc;
-      --ap-border: #e6efff;
-      --ap-soft: #f6faff;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      background: #fff
-    }
-
     .ap-nav {
       background: #fff;
       border-bottom: 1px solid #e0e0e0;
@@ -19,7 +7,7 @@
 
     .ap-nav .navbar-brand,
     .ap-nav .nav-link {
-      color: var(--ap-primary) !important;
+      color: var(--primary-color) !important;
       font-weight: 700
     }
 
@@ -35,7 +23,7 @@
     }
 
     .ap-title {
-      color: var(--ap-primary);
+      color: var(--primary-color);
       font-weight: 800;
       font-size: 34px;
       text-align: center;
@@ -68,7 +56,7 @@
     .ap-search button {
       width: 42px;
       border: 0;
-      background: var(--ap-primary);
+      background: var(--primary-color);
       color: #fff
     }
 
@@ -138,7 +126,7 @@
     }
 
     .ap-range {
-      accent-color: var(--ap-primary)
+      accent-color: var(--primary-color)
     }
 
     /* Products */
@@ -150,7 +138,7 @@
 
     .ap-card {
       background: #fff;
-      border: 1px solid var(--ap-border);
+      border: 1px solid var(#e6efff);
       border-radius: 8px;
       overflow: hidden
     }
@@ -173,13 +161,13 @@
     }
 
     .ap-card-name {
-      color: var(--ap-primary);
+      color: var(--primary-color);
       font-weight: 800;
       margin: 0 0 6px
     }
 
     .ap-card-price {
-      color: var(--ap-primary);
+      color: var(--primary-color);
       font-weight: 700
     }
 

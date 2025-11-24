@@ -1,16 +1,4 @@
 
-        :root {
-            --pd-primary: #0066ff;
-            --pd-dark: #0052cc;
-            --pd-border: #e6efff;
-            --pd-soft: #f3f8ff;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background: #fff
-        }
-
         .pd-nav {
             background: #fff;
             border-bottom: 1px solid #e0e0e0;
@@ -19,7 +7,7 @@
 
         .pd-nav .navbar-brand,
         .pd-nav .nav-link {
-            color: var(--pd-primary) !important;
+            color: var(--primary-color) !important;
             font-weight: 700
         }
 
@@ -41,7 +29,7 @@
         }
 
         .pd-title {
-            color: var(--pd-primary);
+            color: var(--primary-color);
             font-weight: 800;
             font-size: 44px;
             text-align: center;
@@ -49,7 +37,7 @@
         }
 
         .pd-price {
-            color: var(--pd-primary);
+            color: var(--primary-color);
             text-align: center;
             font-weight: 800;
         }
@@ -64,16 +52,16 @@
         .pd-btn {
             border: 2px solid #a9c6ff;
             background: #fff;
-            color: var(--pd-primary);
+            color: var(--primary-color);
             font-weight: 700;
             border-radius: 6px;
             padding: 10px 16px
         }
 
         .pd-btn.primary {
-            background: var(--pd-primary);
+            background: var(--primary-color);
             color: #fff;
-            border-color: var(--pd-primary)
+            border-color: var(--primary-color)
         }
 
         /* Large visual placeholders */
@@ -91,20 +79,20 @@
 
         .pd-spec h2 {
             text-align: center;
-            color: var(--pd-primary);
+            color: var(--primary-color);
             font-weight: 800;
             margin-bottom: 14px
         }
 
         .pd-tabs .nav-link {
-            color: var(--pd-primary);
+            color: var(--primary-color);
             font-weight: 700;
             border: 1px solid #e0eaff;
             margin: 0 4px
         }
 
         .pd-tabs .nav-link.active {
-            background: var(--pd-primary);
+            background: var(--primary-color);
             color: #fff
         }
 
@@ -120,7 +108,7 @@
         }
 
         .pd-sustain h3 {
-            color: var(--pd-primary);
+            color: var(--primary-color);
             font-weight: 800
         }
 
@@ -147,7 +135,7 @@
 
         .pd-gallery h3 {
             text-align: center;
-            color: var(--pd-primary);
+            color: var(--primary-color);
             font-weight: 800;
             margin-bottom: 14px
         }
@@ -169,7 +157,7 @@
 
         .pd-paired h3 {
             text-align: center;
-            color: var(--pd-primary);
+            color: var(--primary-color);
             font-weight: 800;
             margin-bottom: 18px
         }
@@ -194,12 +182,12 @@
         }
 
         .pd-card-name {
-            color: var(--pd-primary);
+            color: var(--primary-color);
             font-weight: 800
         }
 
         .pd-card-price {
-            color: var(--pd-primary);
+            color: var(--primary-color);
             font-weight: 700
         }
 
@@ -224,7 +212,7 @@
 
         .pd-next h3 {
             text-align: center;
-            color: var(--pd-primary);
+            color: var(--primary-color);
             font-weight: 800;
             margin-bottom: 14px
         }

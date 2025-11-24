@@ -1,21 +1,10 @@
-:root {
-    --crt-primary: #0066ff;
-    --crt-dark: #0052cc;
-    --crt-border: #e6efff;
-    --crt-soft: #f6faff;
-}
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        "Helvetica Neue", Arial, sans-serif;
-    background: #fff;
-}
 .crt-nav {
     background: #f3f8ff;
     border-bottom: 1px solid #e0e0e0;
     padding: 24px 0;
 }
 .crt-title {
-    color: var(--crt-primary);
+    color: var(--primary-color);
     font-weight: 800;
     font-size: 38px;
     margin: 0;
@@ -50,7 +39,7 @@ body {
 .crt-search button {
     width: 42px;
     border: 0;
-    background: var(--crt-primary);
+    background: var(--primary-color);
     color: #fff;
 }
 .crt-toggle {
@@ -112,7 +101,7 @@ body {
     cursor: pointer;
 }
 .crt-range {
-    accent-color: var(--crt-primary);
+    accent-color: var(--primary-color);
 }
 
 /* Products */
@@ -142,12 +131,12 @@ body {
     padding: 14px 16px;
 }
 .crt-card-name {
-    color: var(--crt-primary);
+    color: var(--primary-color);
     font-weight: 800;
     margin: 0 0 6px;
 }
 .crt-card-price {
-    color: var(--crt-primary);
+    color: var(--primary-color);
     font-weight: 700;
 }
 

@@ -1,17 +1,6 @@
-:root {
-    --eb-primary: #0066ff;
-    --eb-dark: #0052cc;
-    --eb-border: #e6efff;
-    --eb-soft: #f6faff;
-}
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        "Helvetica Neue", Arial, sans-serif;
-    background: #fff;
-}
 
 .eb-title {
-    color: var(--eb-primary);
+    color: var(--primary-color);
     font-weight: 800;
     font-size: 36px;
     margin: 28px 0 16px;
@@ -34,7 +23,7 @@ body {
     border: 1px solid var(--eb-border);
 }
 .eb-name {
-    color: var(--eb-primary);
+    color: var(--primary-color);
     font-weight: 800;
     margin: 0;
 }
@@ -96,13 +85,13 @@ body {
     margin-top: 12px;
 }
 .eb-total-amount {
-    color: var(--eb-primary);
+    color: var(--primary-color);
     font-size: 28px;
     font-weight: 800;
 }
 .eb-cta {
     width: 100%;
-    background: var(--eb-primary);
+    background: var(--primary-color);
     color: #fff;
     border: none;
     padding: 10px 14px;

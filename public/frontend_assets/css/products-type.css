@@ -1,16 +1,4 @@
 
-    :root {
-      --pt-primary: #0066ff;
-      --pt-dark: #0052cc;
-      --pt-border: #e0e0e0;
-      --pt-soft: #f3f8ff;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      background: #fff
-    }
-
     /* Navbar */
     .pt-nav {
       background: #fff;
@@ -20,7 +8,7 @@
 
     .pt-nav .navbar-brand,
     .pt-nav .nav-link {
-      color: var(--pt-primary) !important;
+      color: var(--primary-color) !important;
       font-weight: 700
     }
 
@@ -36,7 +24,7 @@
     }
 
     .pt-title {
-      color: var(--pt-primary);
+      color: var(--primary-color);
       font-weight: 800;
       font-size: 36px;
       margin: 12px 0 18px
@@ -83,7 +71,7 @@
       height: 42px;
       border-radius: 50%;
       border: none;
-      background: var(--pt-primary);
+      background: var(--primary-color);
       color: #fff;
       display: flex;
       align-items: center;
@@ -100,7 +88,7 @@
       height: 42px;
       border-radius: 50%;
       border: none;
-      background: var(--pt-primary);
+      background: var(--primary-color);
       color: #fff;
       display: flex;
       align-items: center;
@@ -120,7 +108,7 @@
     }
 
     .pt-brands h3 {
-      color: var(--pt-primary);
+      color: var(--primary-color);
       font-weight: 800;
       margin-bottom: 8px
     }
@@ -168,7 +156,7 @@
     }
 
     .pt-dot.active {
-      background: var(--pt-primary)
+      background: var(--primary-color)
     }
 
     @media(min-width:1200px) {

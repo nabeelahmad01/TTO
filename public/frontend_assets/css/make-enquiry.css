@@ -1,14 +1,4 @@
-:root {
-    --me-primary: #0066ff;
-    --me-dark: #0052cc;
-    --me-border: #e0e0e0;
-    --me-soft: #f3f8ff;
-}
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        "Helvetica Neue", Arial, sans-serif;
-    background: #ffffff;
-}
+
 .me-wrapper {
     min-height: 100vh;
     display: flex;
@@ -21,7 +11,7 @@ body {
     max-width: 760px;
 }
 .me-title {
-    color: var(--me-primary);
+    color: var(--primary-color);
     font-weight: 800;
     text-align: center;
     margin-bottom: 24px;
@@ -37,7 +27,7 @@ textarea.form-control {
     height: 160px;
 }
 .me-btn {
-    background: linear-gradient(90deg, var(--me-primary), #1673ff);
+    background: linear-gradient(90deg, var(--primary-color), #1673ff);
     color: #fff;
     border: none;
     height: 42px;

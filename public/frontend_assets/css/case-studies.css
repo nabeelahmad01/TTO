@@ -1,15 +1,3 @@
-:root {
-    --cs-primary: #0066ff;
-    --cs-dark: #0052cc;
-    --cs-border: #e6efff;
-    --cs-soft: #f3f8ff;
-}
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        "Helvetica Neue", Arial, sans-serif;
-    background: #fff;
-}
-
 /* Hero */
 .cs-hero {
     background: #f3f8ff;
@@ -21,7 +9,7 @@ body {
     font-size: 13px;
 }
 .cs-title {
-    color: var(--cs-primary);
+    color: var(--primary-color);
     font-weight: 800;
     font-size: 42px;
     margin-top: 6px;
@@ -50,7 +38,7 @@ body {
 .cs-search button {
     width: 42px;
     border: 0;
-    background: var(--cs-primary);
+    background: var(--primary-color);
     color: #fff;
 }
 .cs-sort {
@@ -134,7 +122,7 @@ body {
 }
 
 .cs-name {
-    color: var(--cs-primary);
+    color: var(--primary-color);
     font-weight: 800;
     margin: 0 0 6px;
 }

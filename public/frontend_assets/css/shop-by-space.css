@@ -1,13 +1,3 @@
-:root {
-    --sp-primary: #0066ff;
-    --sp-dark: #0052cc;
-    --sp-border: #e6efff;
-}
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        "Helvetica Neue", Arial, sans-serif;
-    background: #fff;
-}
 
 .sp-nav {
     background: #fff;
@@ -16,7 +6,7 @@ body {
 }
 .sp-nav .navbar-brand,
 .sp-nav .nav-link {
-    color: var(--sp-primary) !important;
+    color: var(--primary-color) !important;
     font-weight: 700;
 }
 
@@ -28,7 +18,7 @@ body {
     font-size: 13px;
 }
 .sp-title {
-    color: var(--sp-primary);
+    color: var(--primary-color);
     font-weight: 800;
     font-size: 34px;
     margin: 10px 0 16px;
@@ -49,7 +39,7 @@ body {
     position: relative;
 }
 .sp-card h4 {
-    color: var(--sp-primary);
+    color: var(--primary-color);
     font-weight: 800;
     margin-bottom: 6px;
 }
@@ -59,7 +49,7 @@ body {
     margin-bottom: 18px;
 }
 .sp-link {
-    color: var(--sp-primary);
+    color: var(--primary-color);
     font-weight: 700;
     text-decoration: none;
 }
@@ -71,7 +61,7 @@ body {
     width: 42px;
     height: 42px;
     border-radius: 50%;
-    background: var(--sp-primary);
+    background: var(--primary-color);
     color: #fff;
     display: flex;
     align-items: center;
