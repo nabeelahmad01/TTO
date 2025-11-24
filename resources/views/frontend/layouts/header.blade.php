@@ -24,7 +24,7 @@
                         <a id="navServices" class="nav-link" href="{{ route('services') }}">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a id="navProducts" class="nav-link" href="{{ route('products') }}"
+                        <a id="navProducts" class="nav-link" href="{{ route('all.products') }}"
                             onclick="toggleMainContainer(event)">Products</a>
                     </li>
                     <li class="nav-item">
