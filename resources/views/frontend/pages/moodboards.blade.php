@@ -2,23 +2,6 @@
 @section('title', 'Home - Welcome')
 @section('content')
     <link rel="stylesheet" href="{{ asset('frontend_assets/css/moodboards.css') }}">
-    <nav class="navbar navbar-expand-lg mb-nav">
-        <div class="container-fluid px-3 px-md-4">
-            <a class="navbar-brand" href="index.html">totaloffice</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mbNav"
-                aria-controls="mbNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div id="mbNav" class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
     <!-- Hero -->
     <section class="mb-hero">
         <div class="container px-3 px-md-4">
@@ -105,67 +88,6 @@
             <a class="mb-page-link" href="#">Next Page <i class="fas fa-chevron-right ms-1"></i></a>
         </div>
     </div>
-
-    <!-- Footer (same as your design) -->
-    <footer class="footer-section">
-        <div class="footer-wrapper">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <div class="footer-logo">totaloffice</div>
-                </div>
-                <div>
-                    <div class="footer-column-title">Services</div>
-                    <div class="footer-links">
-                        <a href="#" class="footer-link">Services</a>
-                        <a href="#" class="footer-link">Initiatives</a>
-                        <a href="#" class="footer-link">About</a>
-                        <a href="#" class="footer-link">News Us</a>
-                        <a href="#" class="footer-link">Sign Up</a>
-                        <a href="#" class="footer-link">Sign In</a>
-                    </div>
-                </div>
-                <div>
-                    <div class="footer-column-title">All Products</div>
-                    <div class="footer-links">
-                        <a href="#" class="footer-link">Furniture</a>
-                        <a href="#" class="footer-link">Acoustic Products</a>
-                        <a href="#" class="footer-link">Writable surfaces</a>
-                        <a href="#" class="footer-link">Fabrics</a>
-                        <a href="#" class="footer-link">Greenwalls</a>
-                    </div>
-                </div>
-                <div>
-                    <div class="footer-column-title">Contact Us</div>
-                    <div class="footer-links">
-                        <a href="#" class="footer-link">Careers</a>
-                        <a href="#" class="footer-link">Book a Visit</a>
-                        <a href="#" class="footer-link">Book a Call</a>
-                        <a href="#" class="footer-link">Track Order</a>
-                    </div>
-                </div>
-                <div class="footer-newsletter">
-                    <div class="footer-column-title">Subscribe to newsletter</div>
-                    <div class="newsletter-input-wrapper">
-                        <input type="email" class="newsletter-input" placeholder="enter email" />
-                        <button class="newsletter-btn"><i class="fas fa-chevron-right"></i></button>
-                    </div>
-                    <div class="social-icons">
-                        <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <div class="footer-copyright">© 2022 Total Office. All rights reserved.</div>
-                <div class="footer-bottom-links"><a href="#" class="footer-bottom-link">Privacy Policy</a><span
-                        style="color:#e0e0e0" class="mx-2">|</span><a href="#" class="footer-bottom-link">Terms
-                        of use</a></div>
-                <div class="footer-credit">Made with <span style="color:#ff6b6b">❤</span> by tentwenty</div>
-            </div>
-        </div>
-    </footer>
 
 
 
