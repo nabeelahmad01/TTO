@@ -2,6 +2,7 @@
 @section('title', 'Home - Welcome')
 @section('content')
     <link rel="stylesheet" href="{{ asset('frontend_assets/css/about.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend_assets/css/homepage.css') }}">
         <!-- Hero -->
     <section class="ab-hero">
       <div class="container px-3 px-md-4">
@@ -26,100 +27,105 @@
             </p>
           </div>
         </div>
-        <div class="row g-4 align-items-end">
-          <div class="col-6 col-md-3">
-            <div class="ab-img ab-h-1"><i class="fa-regular fa-image"></i></div>
-          </div>
-          <div class="col-6 col-md-3">
-            <div class="ab-img ab-h-2"><i class="fa-regular fa-image"></i></div>
-          </div>
-          <div class="col-6 col-md-3">
-            <div class="ab-img ab-h-1"><i class="fa-regular fa-image"></i></div>
-          </div>
-          <div class="col-6 col-md-3">
-            <div class="ab-img ab-h-2"><i class="fa-regular fa-image"></i></div>
-          </div>
-        </div>
       </div>
+    </section>
+
+    <!-- Category Slider (same as homepage) -->
+    <section class="slider-section">
+        <div class="slider-container">
+            <div class="slider-wrapper" id="abSliderWrapper">
+                <div class="category-card" data-index="0">
+                    <div class="card-icon">
+                        <img src="{{asset('frontend_assets/images/banner_img.png')}}" alt="Furniture" width="100px" />
+                    </div>
+                    <h3 class="card-title">Furniture</h3>
+                    <p class="card-items">40+ items</p>
+                </div>
+                <div class="category-card" data-index="1">
+                    <div class="card-icon">
+                        <img src="{{asset('frontend_assets/images/banner_img.png')}}" alt="Acoustic Products" width="100px" />
+                    </div>
+                    <h3 class="card-title">Acoustic Products</h3>
+                    <p class="card-items">40+ items</p>
+                </div>
+                <div class="category-card" data-index="2">
+                    <div class="card-icon">
+                        <img src="{{asset('frontend_assets/images/banner_img.png')}}" alt="Writable Surfaces" width="100px" />
+                    </div>
+                    <h3 class="card-title">Writable Surfaces</h3>
+                    <p class="card-items">40+ items</p>
+                </div>
+                <div class="category-card" data-index="3">
+                    <div class="card-icon">
+                        <img src="{{asset('frontend_assets/images/banner_img.png')}}" alt="Fabrics" width="100px" />
+                    </div>
+                    <h3 class="card-title">Fabrics</h3>
+                    <p class="card-items">40+ items</p>
+                </div>
+                <div class="category-card" data-index="4">
+                    <div class="card-icon">
+                        <img src="{{asset('frontend_assets/images/banner_img.png')}}" alt="Greenwalls" width="100px" />
+                    </div>
+                    <h3 class="card-title">Greenwalls</h3>
+                    <p class="card-items">40+ items</p>
+                </div>
+                <div class="category-card" data-index="5">
+                    <div class="card-icon">
+                        <img src="{{asset('frontend_assets/images/banner_img.png')}}" alt="Office Supplies" width="100px" />
+                    </div>
+                    <h3 class="card-title">Office Supplies</h3>
+                    <p class="card-items">40+ items</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="dots-container" id="abDotsContainer"></div>
+
+        <div class="text-center">
+            <a href="#" class="cta-button">SEE ALL PRODUCTS</a>
+        </div>
     </section>
 
     <!-- USP Tabs -->
     <section class="ab-usp">
       <div class="container px-3 px-md-4">
-        <h3>USP’s</h3>
+        <h3>USP's</h3>
         <div class="ab-usp-sub">
           With the new AirPlay 2, you can control your home audio system and the
-          speakers throughout your house. You can play a song in the living room
+          speakers throughout your house 4 You can play a song in the living room
           and your kitchen at the same time.
         </div>
-        <ul
-          class="nav nav-pills justify-content-start"
-          id="uspTabs"
-          role="tablist"
-        >
-          <li class="nav-item">
-            <button
-              class="nav-link active"
-              data-bs-toggle="pill"
-              data-bs-target="#usp1"
-            >
-              USP 1
-            </button>
-          </li>
-          <li class="nav-item">
-            <button
-              class="nav-link"
-              data-bs-toggle="pill"
-              data-bs-target="#usp2"
-            >
-              USP 2
-            </button>
-          </li>
-          <li class="nav-item">
-            <button
-              class="nav-link"
-              data-bs-toggle="pill"
-              data-bs-target="#usp3"
-            >
-              USP 3
-            </button>
-          </li>
-        </ul>
-        <div class="tab-content mt-3">
-          <div class="tab-pane fade show active" id="usp1">
-            <div class="row g-4">
-              <div class="col-md-4">
-                <div class="usp-title">USP 1</div>
-                <p style="color: #5b87d1">
-                  Eget neque lorem commodo sit. Viverra ut posuere consequat
-                  nunc.
-                </p>
-              </div>
-              <div class="col-md-4">
-                <div class="usp-title">USP 2</div>
-                <p style="color: #5b87d1">
-                  Cum lacinia magna aliquet metus. Arcu tortor, nisi id dui amet
-                  ac eu.
-                </p>
-              </div>
-              <div class="col-md-4">
-                <div class="usp-title">USP 3</div>
-                <p style="color: #5b87d1">
-                  Id senectus semper id lacus. Risus a, erat arcu morbi tortor.
-                </p>
-              </div>
-              <div class="col-md-4">
-                <div class="ab-pattern ab-box-sm"></div>
-              </div>
-              <div class="col-md-8">
-                <div class="ab-pattern ab-box-lg"></div>
-              </div>
-            </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="usp-title">USP 1</div>
+            <p class="usp-desc">
+              Eget neque lorem commodo sit. Viverra ut posuere consequat
+              nunc.
+            </p>
           </div>
-          <div class="tab-pane fade" id="usp2">
-            <div class="ab-pattern ab-box-lg"></div>
+          <div class="col-md-4">
+            <div class="usp-title">USP 2</div>
+            <p class="usp-desc">
+              Cum lacinia magna aliquet metus. Arcu tortor, nisi id dui
+              amet ac eu. Turpis erat ornare mauris, aliquet arcu.
+              facilisis eleifend.
+            </p>
           </div>
-          <div class="tab-pane fade" id="usp3">
+          <div class="col-md-4">
+            <div class="usp-title">USP 3</div>
+            <p class="usp-desc">
+              Id senectus semper id lacus. Risus a, erat arcu morbi
+              tortor. Nisl, vel mauris vulputate arcu venenatis.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4 mt-2">
+          <div class="col-md-4">
+            <div class="ab-pattern ab-box-sm"></div>
+          </div>
+          <div class="col-md-8">
             <div class="ab-pattern ab-box-lg"></div>
           </div>
         </div>
@@ -369,149 +375,184 @@
       </div>
     </section>
 
-    <!-- Testimonials slider -->
-    <section class="ab-test">
-        <div class="container px-3 px-md-4 position-relative">
-            <h3>Testimonials</h3>
-            <div class="ab-t-viewport">
-                <button class="ab-t-nav ab-t-prev" id="abPrev">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <div class="ab-t-track" id="abTrack">
-                    <div class="ab-t-card">
-                        <div class="row g-3 align-items-center">
-                            <div class="col-md-3 text-center">
-                                <i class="fa-regular fa-image ab-t-left"></i>
-                            </div>
-                            <div class="col-md-9">
-                                <p style="color: #1f67eb; font-weight: 700">
-                                    “All base UI elements are made using Nested Symbols and
-                                    shared styles that are logically connected. Gorgeous,
-                                    high-quality video sharing on desktop, mobile, tablet.”
-                                </p>
-                                <div class="d-flex align-items-center gap-2">
-                                    <span
-                                        style="
-                        width: 34px;
-                        height: 34px;
-                        border-radius: 50%;
-                        background: #eaf3ff;
-                        display: inline-block;
-                      "></span>
-                                    <div>
-                                        <div class="fw-bold text-primary" style="font-size: 14px">
-                                            Name Surname
-                                        </div>
-                                        <div style="color: #8fb0f0; font-size: 12px">
-                                            Founder, Acme Company
-                                        </div>
-                                    </div>
+    <!-- Testimonials Slider Section (same as homepage) -->
+    <section class="testi-slider-section">
+        <div class="testi-slider-header">
+            <h2 class="testi-slider-title">Testimonials</h2>
+        </div>
+
+        <div class="testi-slider-wrapper">
+            <button class="testi-nav-btn testi-nav-prev" onclick="abTestiPrev()">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div class="testi-slider-inner">
+                <!-- Left image -->
+                <div class="testi-slider-image">
+                    <i class="fas fa-image"></i>
+                </div>
+
+                <!-- Right: two cards visible at a time -->
+                <div class="testi-cards-viewport">
+                    <div class="testi-cards-track" id="abTestiTrack">
+                        <!-- Card 1 -->
+                        <div class="testi-slide-card">
+                            <p class="testi-slide-quote">
+                                "All base UI elements are made using Nested Symbols and shared
+                                styles that are logically connected. Gorgeous, high-quality
+                                video sharing on desktop, mobile, tablet.
+                                All base UI elements are made using Nested Symbols"
+                            </p>
+                            <div class="testi-slide-author">
+                                <div class="testi-avatar"></div>
+                                <div>
+                                    <div class="testi-name">Name Surname</div>
+                                    <div class="testi-company">Founder, Acme Company</div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="ab-t-card">
-                        <div class="row g-3 align-items-center">
-                            <div class="col-md-3 text-center">
-                                <i class="fa-regular fa-image ab-t-left"></i>
-                            </div>
-                            <div class="col-md-9">
-                                <p style="color: #1f67eb; font-weight: 700">
-                                    “All base UI elements are made using Nested Symbols and
-                                    shared styles that are logically connected. Gorgeous,
-                                    high-quality video sharing on desktop, mobile, tablet.”
-                                </p>
-                                <div class="d-flex align-items-center gap-2">
-                                    <span
-                                        style="
-                        width: 34px;
-                        height: 34px;
-                        border-radius: 50%;
-                        background: #eaf3ff;
-                        display: inline-block;
-                      "></span>
-                                    <div>
-                                        <div class="fw-bold text-primary" style="font-size: 14px">
-                                            Name Surname
-                                        </div>
-                                        <div style="color: #8fb0f0; font-size: 12px">
-                                            Founder, Acme Company
-                                        </div>
-                                    </div>
+
+                        <!-- Card 2 -->
+                        <div class="testi-slide-card">
+                            <p class="testi-slide-quote">
+                                "All base UI elements are made using Nested Symbols and shared
+                                styles that are logically connected. Gorgeous, high-quality
+                                video sharing on desktop, mobile, tablet.
+                                All base UI elements are made using Nested Symbols"
+                            </p>
+                            <div class="testi-slide-author">
+                                <div class="testi-avatar"></div>
+                                <div>
+                                    <div class="testi-name">Name Surname</div>
+                                    <div class="testi-company">Founder, Acme Company</div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="ab-t-card">
-                        <div class="row g-3 align-items-center">
-                            <div class="col-md-3 text-center">
-                                <i class="fa-regular fa-image ab-t-left"></i>
+
+                        <!-- Card 3 -->
+                        <div class="testi-slide-card">
+                            <p class="testi-slide-quote">
+                                "All base UI elements are made using Nested Symbols and shared
+                                styles that are logically connected. Gorgeous, high-quality
+                                video sharing on desktop, mobile, tablet.
+                                All base UI elements are made using Nested Symbols"
+                            </p>
+                            <div class="testi-slide-author">
+                                <div class="testi-avatar"></div>
+                                <div>
+                                    <div class="testi-name">Name Surname</div>
+                                    <div class="testi-company">Founder, Acme Company</div>
+                                </div>
                             </div>
-                            <div class="col-md-9">
-                                <p style="color: #1f67eb; font-weight: 700">
-                                    “All base UI elements are made using Nested Symbols and
-                                    shared styles that are logically connected. Gorgeous,
-                                    high-quality video sharing on desktop, mobile, tablet.”
-                                </p>
-                                <div class="d-flex align-items-center gap-2">
-                                    <span
-                                        style="
-                        width: 34px;
-                        height: 34px;
-                        border-radius: 50%;
-                        background: #eaf3ff;
-                        display: inline-block;
-                      "></span>
-                                    <div>
-                                        <div class="fw-bold text-primary" style="font-size: 14px">
-                                            Name Surname
-                                        </div>
-                                        <div style="color: #8fb0f0; font-size: 12px">
-                                            Founder, Acme Company
-                                        </div>
-                                    </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="testi-slide-card">
+                            <p class="testi-slide-quote">
+                                "All base UI elements are made using Nested Symbols and shared
+                                styles that are logically connected. Gorgeous, high-quality
+                                video sharing on desktop, mobile, tablet.
+                                All base UI elements are made using Nested Symbols"
+                            </p>
+                            <div class="testi-slide-author">
+                                <div class="testi-avatar"></div>
+                                <div>
+                                    <div class="testi-name">Name Surname</div>
+                                    <div class="testi-company">Founder, Acme Company</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button class="ab-t-nav ab-t-next" id="abNext">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
             </div>
+
+            <button class="testi-nav-btn testi-nav-next" onclick="abTestiNext()">
+                <i class="fas fa-chevron-right"></i>
+            </button>
         </div>
     </section>
+
     <script>
-        // Simple testimonials slider
+        // About Testimonials Slider
         (function() {
-            const track = document.getElementById("abTrack");
-            const prev = document.getElementById("abPrev");
-            const next = document.getElementById("abNext");
-            let index = 0;
+            const track = document.getElementById('abTestiTrack');
+            if (!track) return;
+            const cards = track.querySelectorAll('.testi-slide-card');
+            const totalCards = cards.length;
+            let abTestiIndex = 0;
 
-            function cardWidth() {
-                return track.children[0].getBoundingClientRect().width + 30;
+            function getCardsPerView() {
+                return window.innerWidth <= 768 ? 1 : 2;
             }
 
-            function max() {
-                const viewport = track.parentElement.getBoundingClientRect().width;
-                const perView = Math.max(1, Math.floor(viewport / cardWidth()));
-                return Math.max(0, track.children.length - perView);
+            function updateSlider() {
+                const perView = getCardsPerView();
+                const maxIndex = Math.max(0, totalCards - perView);
+                if (abTestiIndex > maxIndex) abTestiIndex = maxIndex;
+                const pct = (abTestiIndex / perView) * 100;
+                track.style.transform = 'translateX(-' + pct + '%)';
             }
 
-            function update() {
-                track.style.transform = `translateX(${-index * cardWidth()}px)`;
+            window.abTestiNext = function() {
+                const perView = getCardsPerView();
+                const maxIndex = Math.max(0, totalCards - perView);
+                abTestiIndex = Math.min(abTestiIndex + 1, maxIndex);
+                updateSlider();
+            };
+
+            window.abTestiPrev = function() {
+                abTestiIndex = Math.max(abTestiIndex - 1, 0);
+                updateSlider();
+            };
+
+            window.addEventListener('resize', updateSlider);
+        })();
+    </script>
+
+    <script>
+        // About Category Slider
+        (function() {
+            const wrapper = document.getElementById('abSliderWrapper');
+            if (!wrapper) return;
+            const cards = wrapper.querySelectorAll('.category-card');
+            const dotsContainer = document.getElementById('abDotsContainer');
+            let currentIndex = 0;
+
+            function getCardsPerView() {
+                if (window.innerWidth <= 576) return 2;
+                if (window.innerWidth <= 992) return 3;
+                return 4;
             }
-            prev.addEventListener("click", () => {
-                index = Math.max(0, index - 1);
-                update();
+
+            function updateSlider() {
+                const perView = getCardsPerView();
+                const cardWidth = cards[0].offsetWidth + 20;
+                const maxIndex = Math.max(0, cards.length - perView);
+                if (currentIndex > maxIndex) currentIndex = maxIndex;
+                wrapper.style.transform = 'translateX(-' + (currentIndex * cardWidth) + 'px)';
+                updateDots();
+            }
+
+            function updateDots() {
+                if (!dotsContainer) return;
+                const perView = getCardsPerView();
+                const totalDots = Math.max(1, cards.length - perView + 1);
+                dotsContainer.innerHTML = '';
+                for (let i = 0; i < totalDots; i++) {
+                    const dot = document.createElement('span');
+                    dot.className = 'dot' + (i === currentIndex ? ' active' : '');
+                    dot.onclick = function() { currentIndex = i; updateSlider(); };
+                    dotsContainer.appendChild(dot);
+                }
+            }
+
+            // Elevated card effect
+            cards.forEach(function(card, i) {
+                if (i % 2 === 1) card.classList.add('elevated');
             });
-            next.addEventListener("click", () => {
-                index = index + 1 > max() ? 0 : index + 1;
-                update();
-            });
-            window.addEventListener("resize", update);
-            update();
+
+            window.addEventListener('resize', updateSlider);
+            updateSlider();
         })();
     </script>
 @endsection

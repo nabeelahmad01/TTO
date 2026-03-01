@@ -37,18 +37,25 @@
             <div class="video-text">Watch Our Showreel</div>
         </div>
     </section>
-
+<div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="bespoke-title">Bespoke Solutions</h2>
+                </div>
+                <div class="col-lg-6"></div>
+            </div>
+        </div>
     <!-- Bespoke Solutions Section -->
     <section class="bespoke-section">
+        
         <div class="bespoke-container">
             <div class="bespoke-left">
-                <h2 class="bespoke-title">Bespoke Solutions</h2>
-                <div class="bespoke-icon">
+                
+                <div class="bespoke-icon mt-5">
                     <i class="fas fa-image"></i>
                 </div>
             </div>
             <div class="bespoke-right">
-
                 <p class="bespoke-description">
                     Duis netus dignissim eros dui lorem adipiscing. Viverra dui massa
                     arcu adipiscing quis integer habitasse et. Facilisis nulla muscenas
@@ -58,7 +65,6 @@
                     velit at.
                 </p>
                 <button class="bespoke-button">GET STARTED</button>
-
                 <div class="bespoke-industries-title">Industries:</div>
                 <div class="bespoke-industries">
                     <div class="industry-item">
@@ -84,68 +90,22 @@
 
     <!-- Testimonial Section -->
     <section class="testimonial-section">
-        <div class="testimonial-header">
-            <h2 class="testimonial-title">Testimonials</h2>
-        </div>
-
         <div class="testimonial-container">
             <div class="testimonial-left">
+                <div class="testimonial-label">Testimonial</div>
+                <div class="testimonial-quote-block">
+                    <p class="testimonial-quote">
+                        Justo, et, scelerisque cursus quis. A felis, velit orci libero id augue amet. Gravida.<span class="testimonial-author ms-5">John Doe</span>
+                    </p>
+                    
+                </div>
+                <p class="testimonial-desc">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+            </div>
+            <div class="testimonial-right">
                 <div class="testimonial-image-static">
                     <i class="fas fa-image"></i>
-                </div>
-            </div>
-
-            <div class="testimonial-right">
-                <div class="testimonials-slider-wrapper">
-                    <div class="testimonials-slider" id="testimonialsSlider">
-                        <!-- Testimonial 1 -->
-                        <div class="testimonial-card">
-                            <div class="testimonial-label">Testimonial</div>
-                            <p class="testimonial-quote">
-                                "All base UI elements are made using Nested Symbols and shared
-                                styles that are logically connected. Gorgeous, high-quality
-                                video sharing on desktop, mobile, tablet. All base UI elements
-                                are made using Nested Symbols"
-                            </p>
-                            <div class="testimonial-author">Name Surname</div>
-                            <div class="testimonial-company">Founder, Acme Company</div>
-                        </div>
-
-                        <!-- Testimonial 2 -->
-                        <div class="testimonial-card">
-                            <div class="testimonial-label">Testimonial</div>
-                            <p class="testimonial-quote">
-                                "All base UI elements are made using Nested Symbols and shared
-                                styles that are logically connected. Gorgeous, high-quality
-                                video sharing on desktop, mobile, tablet. All base UI elements
-                                are made using Nested Symbols"
-                            </p>
-                            <div class="testimonial-author">Name Surname</div>
-                            <div class="testimonial-company">Founder, Acme Company</div>
-                        </div>
-
-                        <!-- Testimonial 3 -->
-                        <div class="testimonial-card">
-                            <div class="testimonial-label">Testimonial</div>
-                            <p class="testimonial-quote">
-                                "All base UI elements are made using Nested Symbols and shared
-                                styles that are logically connected. Gorgeous, high-quality
-                                video sharing on desktop, mobile, tablet. All base UI elements
-                                are made using Nested Symbols"
-                            </p>
-                            <div class="testimonial-author">Name Surname</div>
-                            <div class="testimonial-company">Founder, Acme Company</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonials-nav">
-                    <button class="testimonial-nav-btn" onclick="slideTestimonialLeft()">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <button class="testimonial-nav-btn" onclick="slideTestimonialRight()">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
                 </div>
             </div>
         </div>
@@ -158,91 +118,162 @@
         </div>
 
         <div class="case-studies-slider-wrapper">
-            <div class="case-studies-slider" id="caseStudiesSlider">
-                <!-- Case Study Card 1 -->
-                <div class="case-study-card">
-                    <div class="case-study-icon">
-                        <i class="fas fa-bookmark"></i>
-                    </div>
-                    <h3 class="case-study-title">Case study 1</h3>
-                    <p class="case-study-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl diam
-                        lectus sagittis, massa aliquam commodo.
-                    </p>
-                    <a href="#" class="case-study-link">Learn More
-                        <i class="fa-regular fa-square-arrow-up-right" style="margin-left: 5px"></i></a>
-                    <div class="case-study-tags">
-                        <span class="case-study-tag">Fabrics</span>
-                        <span class="case-study-tag">Brand</span>
-                    </div>
-                </div>
+            <button class="cs-nav-btn cs-nav-prev" onclick="caseStudyPrev()">
+                <i class="fas fa-chevron-left"></i>
+            </button>
 
-                <!-- Case Study Card 2 -->
-                <div class="case-study-card">
-                    <div class="case-study-icon">
-                        <i class="fas fa-bookmark"></i>
+            <div class="cs-slider-viewport">
+                <div class="cs-slider-track" id="caseStudiesSlider">
+                    <!-- Case Study Card 1 -->
+                    <div class="case-study-card">
+                        <div class="cs-card-inner">
+                            <div class="cs-card-left">
+                                <div class="case-study-icon">
+                                    <i class="far fa-bookmark"></i>
+                                </div>
+                                <div class="cs-card-content">
+                                    <h3 class="case-study-title">Case study 1</h3>
+                                    <p class="case-study-description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl, diam lectus sagittis,
+                                        massa aliquam commodo.
+                                    </p>
+                                    <a href="#" class="case-study-link">Learn More <i class="fas fa-chevron-right" style="font-size: 11px; margin-left: 4px"></i></a>
+                                </div>
+                            </div>
+                            <div class="cs-card-right">
+                                <div class="cs-tag-group">
+                                    <span class="cs-tag-label">Colors</span>
+                                    <div class="cs-tag-circles">
+                                        <span class="cs-circle cs-color-circle"></span>
+                                        <span class="cs-circle cs-color-circle" style="background: #e0ecfa;"></span>
+                                        <span class="cs-circle cs-color-circle"></span>
+                                    </div>
+                                </div>
+                                <div class="cs-tag-group">
+                                    <span class="cs-tag-label">Brands</span>
+                                    <div class="cs-tag-circles">
+                                        <span class="cs-circle cs-brand-circle">DIOR</span>
+                                        <span class="cs-circle cs-brand-circle">PROJECT</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="case-study-title">Case study 2</h3>
-                    <p class="case-study-description">
-                        Viverra dui massa arcu adipiscing quis integer habitasse et.
-                        Facilisis nulla muscenas malesuada pharetra vel quis.
-                    </p>
-                    <a href="#" class="case-study-link">Learn More
-                        <i class="fa-regular fa-square-arrow-up-right" style="margin-left: 5px"></i></a>
-                    <div class="case-study-tags">
-                        <span class="case-study-tag">Furniture</span>
-                        <span class="case-study-tag">Corporate</span>
-                    </div>
-                </div>
 
-                <!-- Case Study Card 3 -->
-                <div class="case-study-card">
-                    <div class="case-study-icon">
-                        <i class="fas fa-bookmark"></i>
+                    <!-- Case Study Card 2 -->
+                    <div class="case-study-card">
+                        <div class="cs-card-inner">
+                            <div class="cs-card-left">
+                                <div class="case-study-icon">
+                                    <i class="far fa-bookmark"></i>
+                                </div>
+                                <div class="cs-card-content">
+                                    <h3 class="case-study-title">Case study 2</h3>
+                                    <p class="case-study-description">
+                                        Viverra dui massa arcu adipiscing quis integer habitasse et.
+                                        Facilisis nulla muscenas malesuada pharetra vel quis.
+                                    </p>
+                                    <a href="#" class="case-study-link">Learn More <i class="fas fa-chevron-right" style="font-size: 11px; margin-left: 4px"></i></a>
+                                </div>
+                            </div>
+                            <div class="cs-card-right">
+                                <div class="cs-tag-group">
+                                    <span class="cs-tag-label">Colors</span>
+                                    <div class="cs-tag-circles">
+                                        <span class="cs-circle cs-color-circle"></span>
+                                        <span class="cs-circle cs-color-circle"></span>
+                                    </div>
+                                </div>
+                                <div class="cs-tag-group">
+                                    <span class="cs-tag-label">Brands</span>
+                                    <div class="cs-tag-circles">
+                                        <span class="cs-circle cs-brand-circle">DIOR</span>
+                                        <span class="cs-circle cs-brand-circle">PROJECT</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="case-study-title">Case study 3</h3>
-                    <p class="case-study-description">
-                        Neque facilisi vel eu risus et sed amet. Molestie habitasse du
-                        sapien venenatis at. At urna egestas elit et.
-                    </p>
-                    <a href="#" class="case-study-link">Learn More
-                        <i class="fa-regular fa-square-arrow-up-right" style="margin-left: 5px"></i></a>
-                    <div class="case-study-tags">
-                        <span class="case-study-tag">Acoustic</span>
-                        <span class="case-study-tag">Education</span>
-                    </div>
-                </div>
 
-                <!-- Case Study Card 4 -->
-                <div class="case-study-card">
-                    <div class="case-study-icon">
-                        <i class="fas fa-bookmark"></i>
+                    <!-- Case Study Card 3 -->
+                    <div class="case-study-card">
+                        <div class="cs-card-inner">
+                            <div class="cs-card-left">
+                                <div class="case-study-icon">
+                                    <i class="far fa-bookmark"></i>
+                                </div>
+                                <div class="cs-card-content">
+                                    <h3 class="case-study-title">Case study 3</h3>
+                                    <p class="case-study-description">
+                                        Neque facilisi vel eu risus et sed amet. Molestie habitasse du
+                                        sapien venenatis at. At urna egestas elit et.
+                                    </p>
+                                    <a href="#" class="case-study-link">Learn More <i class="fas fa-chevron-right" style="font-size: 11px; margin-left: 4px"></i></a>
+                                </div>
+                            </div>
+                            <div class="cs-card-right">
+                                <div class="cs-tag-group">
+                                    <span class="cs-tag-label">Colors</span>
+                                    <div class="cs-tag-circles">
+                                        <span class="cs-circle cs-color-circle"></span>
+                                        <span class="cs-circle cs-color-circle"></span>
+                                    </div>
+                                </div>
+                                <div class="cs-tag-group">
+                                    <span class="cs-tag-label">Brands</span>
+                                    <div class="cs-tag-circles">
+                                        <span class="cs-circle cs-brand-circle">DIOR</span>
+                                        <span class="cs-circle cs-brand-circle">PROJECT</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="case-study-title">Case study 4</h3>
-                    <p class="case-study-description">
-                        Ultrices ullamcorper amet lacus urna velit at. Valpulate in turpis
-                        sem arcu ullamcorper egestas convallis.
-                    </p>
-                    <a href="#" class="case-study-link">Learn More
-                        <i class="fa-regular fa-square-arrow-up-right" style="margin-left: 5px"></i></a>
-                    <div class="case-study-tags">
-                        <span class="case-study-tag">Greenwalls</span>
-                        <span class="case-study-tag">Hospitality</span>
+
+                    <!-- Case Study Card 4 -->
+                    <div class="case-study-card">
+                        <div class="cs-card-inner">
+                            <div class="cs-card-left">
+                                <div class="case-study-icon">
+                                    <i class="far fa-bookmark"></i>
+                                </div>
+                                <div class="cs-card-content">
+                                    <h3 class="case-study-title">Case study 4</h3>
+                                    <p class="case-study-description">
+                                        Ultrices ullamcorper amet lacus urna velit at. Valpulate in turpis
+                                        sem arcu ullamcorper egestas convallis.
+                                    </p>
+                                    <a href="#" class="case-study-link">Learn More <i class="fas fa-chevron-right" style="font-size: 11px; margin-left: 4px"></i></a>
+                                </div>
+                            </div>
+                            <div class="cs-card-right">
+                                <div class="cs-tag-group">
+                                    <span class="cs-tag-label">Colors</span>
+                                    <div class="cs-tag-circles">
+                                        <span class="cs-circle cs-color-circle"></span>
+                                        <span class="cs-circle cs-color-circle"></span>
+                                    </div>
+                                </div>
+                                <div class="cs-tag-group">
+                                    <span class="cs-tag-label">Brands</span>
+                                    <div class="cs-tag-circles">
+                                        <span class="cs-circle cs-brand-circle">DIOR</span>
+                                        <span class="cs-circle cs-brand-circle">PROJECT</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="slider-controls">
-                <div class="slider-buttons">
-                    <button class="slider-btn" onclick="slideLeft()">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <button class="slider-btn" onclick="slideRight()">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                </div>
-                <button class="explore-all-btn">Explore All</button>
-            </div>
+            <button class="cs-nav-btn cs-nav-next" onclick="caseStudyNext()">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <div class="cs-explore-wrapper">
+            <button class="explore-all-btn">Explore All</button>
         </div>
     </section>
 
@@ -380,7 +411,139 @@
         <button class="book-visit-button">Book a Visit</button>
     </section>
 
-    <!-- Resources Section -->
+    <!-- Testimonials Slider Section -->
+    <section class="testi-slider-section">
+        <div class="testi-slider-header">
+            <h2 class="testi-slider-title">Testimonials</h2>
+        </div>
+
+        <div class="testi-slider-wrapper">
+            <button class="testi-nav-btn testi-nav-prev" onclick="testiPrev()">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div class="testi-slider-inner">
+                <!-- Left image -->
+                <div class="testi-slider-image">
+                    <i class="fas fa-image"></i>
+                </div>
+
+                <!-- Right: two cards visible at a time -->
+                <div class="testi-cards-viewport">
+                    <div class="testi-cards-track" id="testiSliderTrack">
+                        <!-- Card 1 -->
+                        <div class="testi-slide-card">
+                            <p class="testi-slide-quote">
+                                "All base UI elements are made using Nested Symbols and shared
+                                styles that are logically connected. Gorgeous, high-quality
+                                video sharing on desktop, mobile, tablet.
+                                All base UI elements are made using Nested Symbols"
+                            </p>
+                            <div class="testi-slide-author">
+                                <div class="testi-avatar"></div>
+                                <div>
+                                    <div class="testi-name">Name Surname</div>
+                                    <div class="testi-company">Founder, Acme Company</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="testi-slide-card">
+                            <p class="testi-slide-quote">
+                                "All base UI elements are made using Nested Symbols and shared
+                                styles that are logically connected. Gorgeous, high-quality
+                                video sharing on desktop, mobile, tablet.
+                                All base UI elements are made using Nested Symbols"
+                            </p>
+                            <div class="testi-slide-author">
+                                <div class="testi-avatar"></div>
+                                <div>
+                                    <div class="testi-name">Name Surname</div>
+                                    <div class="testi-company">Founder, Acme Company</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="testi-slide-card">
+                            <p class="testi-slide-quote">
+                                "All base UI elements are made using Nested Symbols and shared
+                                styles that are logically connected. Gorgeous, high-quality
+                                video sharing on desktop, mobile, tablet.
+                                All base UI elements are made using Nested Symbols"
+                            </p>
+                            <div class="testi-slide-author">
+                                <div class="testi-avatar"></div>
+                                <div>
+                                    <div class="testi-name">Name Surname</div>
+                                    <div class="testi-company">Founder, Acme Company</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="testi-slide-card">
+                            <p class="testi-slide-quote">
+                                "All base UI elements are made using Nested Symbols and shared
+                                styles that are logically connected. Gorgeous, high-quality
+                                video sharing on desktop, mobile, tablet.
+                                All base UI elements are made using Nested Symbols"
+                            </p>
+                            <div class="testi-slide-author">
+                                <div class="testi-avatar"></div>
+                                <div>
+                                    <div class="testi-name">Name Surname</div>
+                                    <div class="testi-company">Founder, Acme Company</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="testi-nav-btn testi-nav-next" onclick="testiNext()">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <script>
+        // Testimonials Slider
+        (function() {
+            const track = document.getElementById('testiSliderTrack');
+            if (!track) return;
+            const cards = track.querySelectorAll('.testi-slide-card');
+            const totalCards = cards.length;
+            let testiIndex = 0;
+
+            function getCardsPerView() {
+                return window.innerWidth <= 768 ? 1 : 2;
+            }
+
+            function updateTestiSlider() {
+                const perView = getCardsPerView();
+                const maxIndex = Math.max(0, totalCards - perView);
+                if (testiIndex > maxIndex) testiIndex = maxIndex;
+                const pct = (testiIndex / perView) * 100;
+                track.style.transform = 'translateX(-' + pct + '%)';
+            }
+
+            window.testiNext = function() {
+                const perView = getCardsPerView();
+                const maxIndex = Math.max(0, totalCards - perView);
+                testiIndex = Math.min(testiIndex + 1, maxIndex);
+                updateTestiSlider();
+            };
+
+            window.testiPrev = function() {
+                testiIndex = Math.max(testiIndex - 1, 0);
+                updateTestiSlider();
+            };
+
+            window.addEventListener('resize', updateTestiSlider);
+        })();
+    </script>
     <section class="resources-section">
         <div class="resources-header">
             <h2 class="resources-title">Resources</h2>
@@ -446,6 +609,45 @@
             </div>
         </div>
     </section>
+
+    <!-- Link Cards Section -->
+    <section class="link-cards-section">
+        <div class="link-cards-grid">
+            <a href="#" class="link-card">
+                <img src="{{ asset('frontend_assets/images/banner_img.png') }}" alt="Bespoke Solutions" class="link-card-img">
+                <h3 class="link-card-title">Bespoke<br>Solutions</h3>
+            </a>
+            <a href="#" class="link-card">
+                <img src="{{ asset('frontend_assets/images/banner_img.png') }}" alt="Products" class="link-card-img">
+                <h3 class="link-card-title">Products</h3>
+            </a>
+            <a href="#" class="link-card">
+                <img src="{{ asset('frontend_assets/images/banner_img.png') }}" alt="Contact Us" class="link-card-img">
+                <h3 class="link-card-title">Contact Us</h3>
+            </a>
+        </div>
+    </section>
+
+    <script>
+        // Case Studies Slider
+        (function() {
+            const track = document.getElementById('caseStudiesSlider');
+            const cards = track ? track.querySelectorAll('.case-study-card') : [];
+            let csIndex = 0;
+
+            window.caseStudyNext = function() {
+                if (cards.length === 0) return;
+                csIndex = (csIndex + 1) % cards.length;
+                track.style.transform = 'translateX(-' + (csIndex * 100) + '%)';
+            };
+
+            window.caseStudyPrev = function() {
+                if (cards.length === 0) return;
+                csIndex = (csIndex - 1 + cards.length) % cards.length;
+                track.style.transform = 'translateX(-' + (csIndex * 100) + '%)';
+            };
+        })();
+    </script>
     <script>
         const sliderWrapper = document.getElementById('sliderWrapper');
         const dotsContainer = document.getElementById('dotsContainer');

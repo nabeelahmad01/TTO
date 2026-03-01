@@ -2,9 +2,9 @@
     <div class="upper_header">
         <div class="container px-3 px-md-4">
             <div class="navbar-icons ms-auto">
-                <a href="#"><i class="fas fa-search"></i></a>
-                <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                <a href="dashboard.html"><i class="fas fa-user"></i></a>
+                <a href="#" class="text-decoration-none"><i class="fas fa-search"></i> Search</a>
+                <a href="#" style="border-radius: 50%;"><i class="fas fa-shopping-cart"></i></a>
+                <a href="dashboard.html" style="background-color: #EAF3FF"><i class="fas fa-user"></i></a>
             </div>
         </div>
     </div>
