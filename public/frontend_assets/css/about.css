@@ -352,7 +352,7 @@
 
 /* ===== Testimonials Slider (same as homepage) ===== */
 .testi-slider-section {
-    background: linear-gradient(135deg, #e8f2ff 0%, #dbeafe 100%);
+    background: #F2F8FFB2;
     padding: 60px 0;
     /* border-top: 3px solid var(--primary-color); */
 }
